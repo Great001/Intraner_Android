@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="APP_GREEN">#B4D88A</color>
+    <color name="APP_Background">#f7f6f5</color>
+    <color name="APP_GRAY">#c3c3c3</color>
+
+    <!--swiperefresh color-->
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_light">#ffff4444</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white2">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="green">#00FF00</color>
+    <color name="red">#990033</color>
+    <color name="c_line_color">#c3c3c3</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="c_personnel_edit_color">#DF5E6D</color>
+    <color name="section_edit_and_delete_color">#EA6872</color>
+
+    <color name="dialog_title_color">#333333</color>
+    <color name="dialog_text_color">#9b9b9b</color>
+    <color name="dialog_btn_color">#51B9B9</color>
+    <color name="label_tip_color">#888888</color>
+    <color name="et_username_color">#c3c3c3</color>
+    <color name="et_pwd_color">#c3c3c3</color>
+    <color name="btn_login_color">#ffffff</color>
+
+    <!-- integral -->
+    <color name="tv_color_update_time">#c3c3c3</color>
+    <color name="apostrophe_text_color">#888888</color>
+    <color name="name_text_color">#000000</color>
+    <color name="score_text_color">#c3c3c3</color>
+    <color name="ranking_text_color">#ffffff</color>
+    <color name="view_line_background_color">#c3c3c3</color>
+    <color name="rbtn_rank_tab_default_color">#7F808080</color>
+    <color name="rbtn_tab_checked_color">#B4D88A</color>
+    <color name="tv_top_three_rank_color">#EA6872</color>
+    <color name="tv_my_rank_color">#A2CF6C</color>
+    <color name="item_my_rank_color">#F7F6F5</color>
+    <color name="tv_tipsscore_text_color">#888888</color>
+    <color name="tv_detail_title_text_color">#888888</color>
+    <color name="et_text_Color_Hint">#c3c3c3</color>
+    <color name="v_line_color">#c3c3c3</color>
+    <color name="ll_search_result_color">#F7F6F5</color>
+    <color name="tv_search_result_title_text_color">#888888</color>
+    <color name="tv_integral_detail_item_score_text_color">#888888</color>
+    <color name="tv_integral_detail_item_date_text_color">#c3c3c3</color>
+    <color name="tv_team_name_text_color">#B4D88A</color>
+
+    <!-- team integral -->
+    <color name="expandable_list_view_parent_item_color">#EAEAEA</color>
+
+    <!-- props item -->
+    <color name="tv_integral_color">#c3c3c3</color>
+    <color name="tv_even_more_text_color">#B4D88A</color>
+
+    <!--home page -->
+    <color name="c_font_color">#99ffffff</color>
+    <color name="c_home_text_color">#B4D88A</color>
+    <color name="c_integral_text_color">#888888</color>
+
+    <!-- about the knot -->
+    <color name="c_about_theknot_bg">#f9f9f9</color>
+
+    <!-- personnel information -->
+    <color name="c_personnel_information_name_color">#9ECF66</color>
+    <color name="c_personnel_information_title_color">#9B9EA2</color>
+
+    <color name="navigation_focus_line">#B4D88A</color>
+    <color name="navigation_txt_focus">#FFFFFFFF</color>
+    <color name="navigation_txt_default">#88ffffff</color>
+    <color name="train_lv_item_title_color">#1f1f1f</color>
+    <color name="ib_icon_right_color">#00000000</color>
+    <color name="tv_train_status_color">#EA6872</color>
+    <color name="tv_train_status_bg_color">#ffffff</color>
+    <color name="txt_registration_color">#888888</color>
+    <color name="tv_training_status_color">#2BBAD2F3</color>
+    <color name="tv_training_status_bg_color">#8AD2F3</color>
+    <color name="tv_training_status_opacity_bg_color">#328AD2F3</color>
+    <color name="tv_activity_detail_theme_color">#A2CF6C</color>
+    <color name="tv_registration_count_color">#D0021B</color>
+    <color name="tv_registration_count_opacity_color">#16D0021B</color>
+
+    <!-- message manage -->
+    <color name="message_title_background_color">#212121</color>
+    <color name="message_title_non_current_color">#808080</color>
+    <color name="item_title_color">#000000</color>
+    <color name="item_content_color">#000000</color>
+    <color name="item_time_color">#c3c3c3</color>
+
+    <color name="green_button">#B4D88A</color>
+    <color name="green_app_system">#B4D88A</color>
+    <color name="gray_button">#888888</color>
+    <color name="message_title_selector_color">#B4D88A</color>
+
+    <!-- activity manage-->
+    <color name="activity_edit_text_color">#9B9EA2</color>
+
+
+    <!-- activity status color-->
+    <color name="activity_status_not_start">#ea6872</color>
+    <color name="activity_status_not_start_background">#33ea6872</color>
+    <color name="activity_status_check_in">#8ad2f3</color>
+    <color name="activity_status_check_in_background">#338ad2f3</color>
+    <color name="activity_status_checked_in">#19b8b7</color>
+    <color name="activity_status_checked_in_background">#3319b8b7</color>
+    <color name="activity_status_end">#c3c3c3</color>
+    <color name="activity_status_end_background">#33c3c3c3</color>
+    <color name="activity_status_starting">#8ad2f3</color>
+    <color name="activity_status_starting_background">#338ad2f3</color>
+
+    <color name="event_status_0">#ea6872</color><!--未开始-->
+    <color name="event_status_1">#a2cf6c</color><!--报名中-->
+    <color name="event_status_2">#19b8b7</color><!--已报名-->
+    <color name="event_status_3">#8ad2f3</color><!--报名结束-->
+    <color name="event_status_4">#f1b764</color><!--进行中-->
+    <color name="event_status_5">#c3c3c3</color><!--已完成-->
+
+    <color name="event_status_background_0">#33ea6872</color>
+    <color name="event_status_background_1">#33a2cf6c</color>
+    <color name="event_status_background_2">#3319b8b7</color>
+    <color name="event_status_background_3">#338ad2f3</color>
+    <color name="event_status_background_4">#33f1b764</color>
+    <color name="event_status_background_5">#33c3c3c3</color>
+
+    <!-- employee information -->
+    <color name="more_frame_backgroud">#e9e9e9</color>
+    <color name="phone_number">#B4D88A</color>
+    <color name="photo_wall_information_title_color">#9B9EA2</color>
+    <color name="photo_wall_information_text_color">#9B9EA2</color>
+    <color name="photo_wall_information_bg_color">#66000000</color>
+    <color name="tv_photo_wall_information_text_color">#ccffffff</color>
+    <color name="tv_photo_wall_information_text_shadow_color">#27000000</color>
+
+    <!-- AlphabetScrollBar -->
+    <color name="default_text_color">#7fffffff</color>
+    <color name="focus_text_color">#B4D88A</color>
+
+    <!-- Calendar -->
+    <color name="calendar_header_color">#4a4a4a</color>
+    <color name="calendar_focus_event">#ffffff</color>
+    <color name="calendar_focus">#000000</color>
+    <color name="calendar_dafault">#7fffffff</color>
+    <color name="calendar_today1">#33ffffff</color>
+    <color name="calendar_weekend">#7fEA6872</color>
+    <color name="calendar_green">#a2cf6c</color>
+    <color name="calendar_orange">#f1b764</color>
+    <color name="calendar_listSelector_color">#0000</color>
+
+    <!-- Month Stars -->
+    <color name="tv_month_stars_title_color">#A2CF6C</color>
+    <color name="tv_month_stars_position_color">#7fffffff</color>
+
+    <!-- New Commer -->
+    <color name="tv_new_comer_position_color">#7fffffff</color>
+    <color name="tv_new_comer_department_color">#A2CF6C</color>
+    <color name="tv_new_comer_onboard_color">#cfffffff</color>
+    <color name="new_comer_item_background_color">#333333</color>
+
+
+    <!--Add Types-->
+    <color name="btn_save_types_wrong">#c3c3c3</color>
+    <color name="listview_divider">#4a4a4a</color>
+
+    <!--Add Activity-->
+    <color name="btn_background_color">#B4D88A</color>
+    <color name="btn_background_gray_color">#d8d8d8</color>
+    <color name="btn_text_color">#ffffff</color>
+
+    <color name="edt_hint_color">#888888</color>
+    <color name="ll_calendar_color">#83118c1a</color>
+
+</resources>

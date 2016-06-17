@@ -1,0 +1,8 @@
+<resources>
+    <!-- integral exchange -->
+    <dimen name="btn_exchange_text_size">16sp</dimen>
+
+    <!-- gift details -->
+    <dimen name="btn_gift_details_text_size">10sp</dimen>
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/tv_txt_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:gravity="center_vertical"
+        android:text="@string/et_start_date_hint"
+        android:textSize="@dimen/font_size_14" />
+
+    <TextView
+        android:id="@+id/tv_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@+id/tv_txt_end_time"
+        android:drawableRight="@drawable/icon_calendar"
+        android:gravity="center_vertical|center_horizontal"
+        android:singleLine="true"
+        android:textSize="@dimen/font_size_14" />
+
+    <include
+        layout="@layout/line_divider_grey"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/tv_txt_start_time"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:id="@+id/tv_txt_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_txt_start_time"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/et_end_date_hint"
+        android:textSize="@dimen/font_size_14" />
+
+    <TextView
+        android:id="@+id/tv_end_time"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tv_start_time"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/tv_txt_end_time"
+        android:drawableRight="@drawable/icon_calendar"
+        android:gravity="center_vertical|center_horizontal"
+        android:singleLine="true"
+        android:textSize="@dimen/font_size_14" />
+
+    <include
+        layout="@layout/line_divider_grey"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/tv_txt_end_time"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tv_end_time"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_gain_integral_shape"
+        android:text="@string/btn_search_text"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_18" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tv_search_result_title_height"
+        android:layout_below="@+id/btn_search"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="12dp"
+        android:gravity="left|center"
+        android:text="@string/tv_search_result_title_text"
+        android:textColor="@color/tv_search_result_title_text_color"
+        android:textSize="@dimen/tv_search_result_title_text_size" />
+
+    <ListView
+        android:id="@+id/lv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title" />
+
+
+</RelativeLayout>

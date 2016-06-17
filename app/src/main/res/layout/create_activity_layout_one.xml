@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+    <TextView android:id="@+id/tv_newactivity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/create_activity_title"
+       />
+
+    <EditText
+        android:id="@+id/et_newactivity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="@dimen/edt_hint_size"
+        android:textColor="@color/edt_hint_color"
+        android:hint="@string/activity_title_hint"
+        />
+
+    <TextView
+        android:id="@+id/tv_wordcount_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textColor="@color/holo_red_light"
+        android:textSize="@dimen/tv_remind_wordcount" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_newactivity_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/activity_type"
+            android:gravity="center_vertical"
+            />
+
+            <TextView
+                android:id="@+id/tv_newactivity_chooseType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/please_choose"
+                android:drawableRight="@drawable/icon_arrow_right"
+                android:gravity="center_vertical|right"
+                />
+        </LinearLayout>
+
+        <include
+            layout="@layout/line_divider_grey"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_divider_height"
+            android:layout_marginTop="8dp"
+            />
+
+    <TextView
+        android:id="@+id/tv_newactivity_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/activity_time"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_tv_dateTime_height"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_newactivity_starttime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/choose_start_time_hint"
+            android:drawableRight="@drawable/icon_calendar"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_newactivity_endtime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:hint="@string/choose_end_time_hint"
+            android:drawableRight="@drawable/icon_calendar"
+            android:gravity="center_vertical"/>
+
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal">
+            <include
+                layout="@layout/line_divider_grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_divider_height"
+                android:layout_weight="1"
+                />
+
+            <include
+                layout="@layout/line_divider_grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_divider_height"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <TextView
+        android:id="@+id/tv_newactivity_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/activity_address"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/rg_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbtn_freaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/rbtn_freaddr_height"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbtn_baiduAddr"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/rbtn_baiduaddress_height"
+                android:layout_marginTop="3dp"/>
+        </RadioGroup>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_choose_freaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tv_freaddr_height"
+                android:text="@string/choose_frequent_address_hint"
+                android:textSize="@dimen/tv_common"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tv_newactivity_chooseAddr"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tv_freaddr_height"
+                android:text="@string/please_choose"
+                android:drawableRight="@drawable/icon_arrow_right"
+                android:layout_gravity="right"
+                android:gravity="right|center_vertical"
+              />
+        </LinearLayout>
+        <include
+            layout="@layout/line_divider_grey"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_divider_height"
+            />
+
+    <TextView
+        android:id="@+id/tv_newactivity_baiduAddr"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tv_baiduAddr_height"
+        android:layout_marginTop="3dp"
+        android:hint="@string/input_the_baidu_address"
+        android:drawableRight="@drawable/find_gray_dddddd"
+        android:textSize="@dimen/tv_common"
+        android:gravity="center_vertical"
+        android:enabled="false"
+        />
+
+        <include
+            layout="@layout/line_divider_grey"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_divider_height"
+            />
+   </LinearLayout>
+        </LinearLayout>
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/mv_baidumap"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mv_baidu_height"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:clickable="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_newactivity_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/activity_content"/>
+
+    <EditText
+        android:id="@+id/et_newactivity_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:maxLines="10"
+        android:textSize="@dimen/edt_hint_size"
+        android:hint="@string/hint_activity_content"/>
+        <TextView
+            android:id="@+id/tv_wordcount_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tv_remind_wordcount"
+            android:textColor="@color/holo_red_light"
+            android:layout_gravity="right"/>
+
+    <Button
+        android:id="@+id/btn_newactivity_nextstep"
+        android:layout_gravity="right"
+        android:layout_width="@dimen/btn_nextStep_width"
+        android:layout_height="@dimen/btn_nextStep_height"
+        android:layout_marginBottom="15dp"
+        android:text="@string/next_step"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/btn_login_color"
+        android:textSize="@dimen/btn_login_text_size"
+        android:background="@drawable/btn_green_style"
+        android:clickable="true"
+        />
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+

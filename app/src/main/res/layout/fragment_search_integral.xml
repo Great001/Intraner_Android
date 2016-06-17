@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/tv_txt_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:text="开始时间"
+        android:textSize="@dimen/font_size_14" />
+
+    <TextView
+        android:id="@+id/tv_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@+id/tv_txt_end_time"
+        android:drawableRight="@drawable/icon_calendar"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_14" />
+
+    <include
+        layout="@layout/line_divider_grey"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_alignLeft="@+id/tv_txt_start_time"
+        android:layout_alignRight="@+id/tv_start_time"
+        android:layout_below="@+id/tv_txt_start_time" />
+
+    <TextView
+        android:id="@+id/tv_txt_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_txt_start_time"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="结束时间"
+        android:textSize="@dimen/font_size_14" />
+
+    <TextView
+        android:id="@+id/tv_end_time"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tv_start_time"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/tv_txt_end_time"
+        android:drawableRight="@drawable/icon_calendar"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="@dimen/font_size_14" />
+
+    <include
+        layout="@layout/line_divider_grey"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_alignLeft="@+id/tv_txt_end_time"
+        android:layout_alignRight="@+id/tv_end_time"
+        android:layout_below="@+id/tv_txt_end_time" />
+
+    <TextView
+        android:id="@+id/tv_txt_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_txt_end_time"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:minWidth="10dp"
+        android:textSize="@dimen/font_size_14" />
+
+    <TextView
+        android:id="@+id/tv_choose"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tv_end_time"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/tv_txt_end_time"
+        android:drawableRight="@drawable/icon_arrow_down"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="@dimen/font_size_14" />
+
+    <include
+        layout="@layout/line_divider_grey"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_alignLeft="@+id/tv_txt_choose"
+        android:layout_alignRight="@+id/tv_choose"
+        android:layout_below="@+id/tv_txt_choose" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tv_choose"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_gain_integral_shape"
+        android:text="@string/btn_search_text"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_18" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/cl_contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

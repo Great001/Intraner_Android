@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_employee_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rl_self_introduction_height">
+
+    <ImageView
+        android:id="@+id/iv_employee_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/photo_wall_information_bg_color" />
+
+    <com.xogrp.tkgz.View.CircleImageView
+        android:id="@+id/iv_employee_icon"
+        android:layout_width="@dimen/iv_self_introduction_icon_width"
+        android:layout_height="@dimen/iv_self_introduction_icon_height"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="72dp" />
+
+    <TextView
+        android:id="@+id/tv_employee_name"
+        style="@style/EmployeeIntroductionShadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_employee_icon"
+        android:layout_marginLeft="24dp"
+        android:layout_toLeftOf="@+id/iv_leader"
+        android:layout_toRightOf="@+id/iv_employee_icon"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_22" />
+
+    <LinearLayout
+        android:id="@+id/ll_reward_points_grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_employee_name"
+        android:layout_below="@+id/tv_employee_name"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/iv_employee_icon">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/EmployeeIntroductionShadow"
+            android:textColor="@color/tv_photo_wall_information_text_color"
+            android:text="@string/text_grade"
+            android:textSize="@dimen/font_size_14"/>
+
+        <TextView
+            android:id="@+id/tv_grade_name"
+            style="@style/EmployeeIntroductionShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_photo_wall_information_text_color"
+            android:textSize="@dimen/font_size_14" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_annual_reward_points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_employee_name"
+        android:layout_below="@+id/ll_reward_points_grade"
+        android:layout_toRightOf="@+id/iv_employee_icon">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/EmployeeIntroductionShadow"
+            android:text="@string/text_year_integral"
+            android:textColor="@color/tv_photo_wall_information_text_color"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tv_year_integral"
+            style="@style/EmployeeIntroductionShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_photo_wall_information_text_color"
+            android:textSize="@dimen/font_size_14" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_employee_name"
+        android:layout_below="@+id/ll_annual_reward_points"
+        android:layout_toRightOf="@+id/iv_employee_icon">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/EmployeeIntroductionShadow"
+            android:text="@string/text_month_integral"
+            android:textColor="@color/tv_photo_wall_information_text_color"
+            android:textSize="@dimen/font_size_14"/>
+
+        <TextView
+            android:id="@+id/tv_month_integral"
+            style="@style/EmployeeIntroductionShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_photo_wall_information_text_color"
+            android:textSize="@dimen/font_size_14" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_leader"
+        android:layout_width="@dimen/iv_leader_or_grade_width"
+        android:layout_height="@dimen/iv_leader_or_grade_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="67dp"
+        android:src="@drawable/icon_teamleader"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_grade"
+        android:layout_width="@dimen/iv_leader_or_grade_width"
+        android:layout_height="@dimen/iv_leader_or_grade_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="67dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_text"
+                style="@style/EmployeeIntroductionShadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:text="@string/upgrade_progress_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/tv_tipsscore"
+                style="@style/EmployeeIntroductionShadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_text"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:textColor="@color/tv_photo_wall_information_text_color"
+                android:textSize="@dimen/font_size_14" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/pbar_integral"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/progressBar_height"
+            android:layout_marginTop="8dp"
+            android:progressDrawable="@drawable/progressbar_self_instroduction" />
+    </LinearLayout>
+</RelativeLayout>

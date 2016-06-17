@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home_my_goods_item"
+        app:showAsAction="always"
+        app:actionLayout="@layout/layout_action_bar_home_menu"
+        android:title="我的物品" />
+
+</menu>

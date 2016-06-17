@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_home_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_home_top_height"
+        android:background="@drawable/home_bg">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv_background"
+            android:scaleType="fitXY"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#66000000" />
+        <com.xogrp.tkgz.View.CircleImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/iv_icon_width"
+            android:layout_height="@dimen/iv_icon_height"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="72dp"
+            android:src="@drawable/header_big_sample" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:gravity="center|left"
+            android:text="@string/personnel_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_24"
+            android:layout_alignTop="@+id/iv_icon"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:layout_toEndOf="@+id/iv_icon" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tv_name_height"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/system_manage"
+        android:textColor="@color/c_integral_text_color"
+        android:textSize="@dimen/user_message_text_size" />
+
+    <TextView
+        android:id="@+id/tv_personnel_manage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_home_choose_height"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:drawableLeft="@drawable/menu_icon_team"
+        android:drawablePadding="32dp"
+        android:drawableRight="@drawable/icon_arrow_right"
+        android:gravity="center|left"
+        android:text="@string/personnel_manage"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_home_choose_title_text_size" />
+
+    <include layout="@layout/line_divider_grey" />
+
+
+    <TextView
+        android:id="@+id/tv_integral_manage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_home_choose_height"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:drawableLeft="@drawable/menu_icon_point"
+        android:drawablePadding="32dp"
+        android:drawableRight="@drawable/icon_arrow_right"
+        android:gravity="center|left"
+        android:text="@string/integral_manage"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_home_choose_title_text_size" />
+
+    <include layout="@layout/line_divider_grey" />
+
+
+    <TextView
+        android:id="@+id/tv_activity_manage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_home_choose_height"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:drawableLeft="@drawable/menu_icon_activity"
+        android:drawablePadding="32dp"
+        android:drawableRight="@drawable/icon_arrow_right"
+        android:gravity="center|left"
+        android:text="@string/activity_manage"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_home_choose_title_text_size" />
+
+    <include layout="@layout/line_divider_grey" />
+
+</LinearLayout>

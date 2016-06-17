@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/self_instroduction_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_information"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/employee_message_section"
+                        android:textColor="@color/photo_wall_information_title_color" />
+
+                    <TextView
+                        android:id="@+id/tv_information_section"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/photo_wall_information_text_color"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <include layout="@layout/line_my_account" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27dp"
+                        android:text="@string/employee_message_superior"
+                        android:textColor="@color/photo_wall_information_title_color" />
+
+                    <TextView
+                        android:id="@+id/tv_information_superior"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/photo_wall_information_text_color"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <include layout="@layout/line_my_account" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27dp"
+                        android:text="@string/employee_message_email"
+                        android:textColor="@color/photo_wall_information_title_color" />
+
+                    <TextView
+                        android:id="@+id/tv_information_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/photo_wall_information_text_color"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <include layout="@layout/line_my_account" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/employee_message_position"
+                        android:textColor="@color/photo_wall_information_title_color" />
+
+                    <TextView
+                        android:id="@+id/tv_information_position"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/photo_wall_information_text_color"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <include layout="@layout/line_my_account" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27dp"
+                        android:text="@string/employee_message_birthday"
+                        android:textColor="@color/photo_wall_information_title_color" />
+
+                    <TextView
+                        android:id="@+id/tv_information_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/photo_wall_information_text_color"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <include layout="@layout/line_my_account" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27dp"
+                        android:text="@string/employee_message_phone_number"
+                        android:textColor="@color/photo_wall_information_title_color" />
+
+                    <EditText
+                        android:id="@+id/et_information_phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:hint="@string/employee_message_phone_num_null"
+                        android:textColorHint="@color/black"
+                        android:background="@null"
+                        android:inputType="phone"
+                        android:digits="1234567890"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <include layout="@layout/line_my_account" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/employee_message_self_introduction"
+                    android:textColor="@color/photo_wall_information_title_color" />
+
+                <EditText
+                    android:id="@+id/et_self_introduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:hint="@string/employee_message_introduction_null"
+                    android:textColorHint="@color/black"
+                    android:lineSpacingMultiplier="1.4"
+                    android:gravity="top"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <include
+                    layout="@layout/line_my_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_account_line_height" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginBottom="21dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/btn_my_account_gray_shape"
+                android:gravity="center"
+                android:text="@string/employee_message_button_text"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

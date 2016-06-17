@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- gift details -->
+    <integer name="tv_exchanged_weight">1</integer>
+    <integer name="tv_effective_weight">1</integer>
+
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_propsItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rank_message_item_height"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal">
+
+
+        <com.xogrp.tkgz.View.CircleImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:textColor="@color/name_text_color"
+                android:textSize="@dimen/name_text_size" />
+
+
+            <TextView
+                android:id="@+id/tv_year_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_integral"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:textColor="@color/tv_integral_color" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_exchange"
+            android:layout_width="@dimen/btn_exchange_width"
+            android:layout_height="@dimen/btn_exchange_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/btn_gain_integral_shape"
+            android:text="@string/btn_exchange_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btn_exchange_text_size" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_even_more"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rank_message_item_height">
+
+        <include layout="@layout/line_divider_grey" />
+
+        <TextView
+            android:id="@+id/tv_even_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/icon_green_arrow_down"
+            android:text="@string/tv_even_more_text"
+            android:textColor="@color/APP_GREEN"
+            android:textSize="@dimen/tv_even_more_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

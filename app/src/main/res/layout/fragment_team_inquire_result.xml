@@ -1,0 +1,293 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item_my_rank_color"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/tv_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/tv_team_name_text_color"
+            android:textSize="@dimen/team_integral_team_name_text" />
+
+        <TextView
+            android:id="@+id/tv_member_amount_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@+id/tv_member_amount"
+            android:text="@string/team_integral_member_amount_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/team_integral_grade_title_text_size" />
+
+        <TextView
+            android:id="@+id/tv_member_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_member_amount_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/team_integral_grade_text_size" />
+
+        <RelativeLayout
+            android:id="@+id/rl_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_team_name"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/iv_clock"
+                android:layout_width="@dimen/iv_integral_detail_item_clock_width"
+                android:layout_height="@dimen/iv_integral_detail_item_clock_height"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_time" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_toRightOf="@+id/iv_clock"
+                android:textColor="@color/tv_integral_detail_item_date_text_color"
+                android:textSize="@dimen/tv_integral_detail_item_date_text_size" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_container_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_date">
+
+            <RelativeLayout
+                android:id="@+id/rl_the_first_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_date"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_the_first_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_metal1" />
+
+                <TextView
+                    android:id="@+id/tv_the_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/iv_the_first_badge"
+                    android:text="@string/tv_the_first_name_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_integral_detail_item_date_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_the_first_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tv_the_first_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/team_inquire_result_amount_text_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_the_second_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/rl_date"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="55dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_the_second_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_metal2" />
+
+                <TextView
+                    android:id="@+id/tv_the_second_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/iv_the_second_badge"
+                    android:text="@string/tv_the_second_name_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_integral_detail_item_date_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_the_second_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tv_the_second_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/team_inquire_result_amount_text_size" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_container_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_container_one">
+
+            <RelativeLayout
+                android:id="@+id/rl_the_third_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_the_first_title"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_the_third_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_metal3" />
+
+                <TextView
+                    android:id="@+id/tv_the_third_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/iv_the_third_badge"
+                    android:text="@string/tv_the_third_name_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_integral_detail_item_date_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_the_third_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tv_the_third_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/team_inquire_result_amount_text_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_the_fourth_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="55dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_the_fourth_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_metal4" />
+
+                <TextView
+                    android:id="@+id/tv_the_fourth_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/iv_the_fourth_badge"
+                    android:text="@string/tv_the_fourth_name_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_integral_detail_item_date_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_the_fourth_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tv_the_fourth_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/team_inquire_result_amount_text_size" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_the_fifth_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_container_two"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp">
+
+            <ImageView
+                android:id="@+id/iv_the_fifth_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_metal5" />
+
+            <TextView
+                android:id="@+id/tv_the_fifth_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/iv_the_fifth_badge"
+                android:text="@string/tv_the_fifth_name_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tv_integral_detail_item_date_text_size" />
+
+            <TextView
+                android:id="@+id/tv_the_fifth_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_the_fifth_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/team_inquire_result_amount_text_size" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <ExpandableListView
+        android:id="@+id/elv_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_container"
+        android:divider="@color/c_line_color"
+        android:dividerHeight="0.3dp"
+        android:groupIndicator="@null"
+        android:scrollbars="none" />
+
+</RelativeLayout>

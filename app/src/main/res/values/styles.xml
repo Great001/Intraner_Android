@@ -1,0 +1,104 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:actionBarSize">@dimen/toolbar_height</item>
+        <item name="colorAccent">@color/APP_GRAY</item>
+        <item name="actionBarSize">@dimen/toolbar_height</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonStyle</item>
+        <item name="android:windowBackground">@drawable/splash_page</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="colorAccent">@color/APP_GREEN</item>
+    </style>
+
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/APP_GREEN</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="TKGZDialogTheme" parent="@android:style/Theme.Translucent">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorAccent">@color/APP_GREEN</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="TKGZActionBarMenuTextStyle" parent="@android:style/Widget.Holo.ActionButton">
+        <item name="android:textColor">@color/APP_GREEN</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="dot_style">
+        <item name="android:layout_width">5dp</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:background">@color/red</item>
+        <item name="android:layout_marginLeft">1.5dp</item>
+        <item name="android:layout_marginRight">1.5dp</item>
+    </style>
+
+    <style name="TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@android:color/black</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabIndicatorColor">@color/message_title_selector_color</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabTextAppearance">@style/CustomTabText</item>
+    </style>
+
+    <style name="CustomTabText" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/message_title_non_current_color</item>
+    </style>
+
+    <!--<style name="CheckBoxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">-->
+    <!--<item name="colorAccent">@color/APP_GREEN</item>-->
+    <!--</style>-->
+
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:actionBarSize">@dimen/toolbar_height</item>
+        <item name="actionBarSize">@dimen/toolbar_height</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!--<item name="drawerArrowStyle">@style/ArrowStyle</item>-->
+    </style>
+
+    <!--<style name="Menu.Base" parent="Widget.AppCompat.PopupMenu.Overflow">-->
+    <!--<item name="android:color">@android:color/white</item>-->
+    <!--</style>-->
+
+    <!--<style name="ArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">-->
+    <!--<item name="android:icon">@drawable/icon_back</item>-->
+    <!--<item name="android:layout_marginLeft">16dp</item>-->
+    <!--<item name="android:layout_marginRight">32dp</item>-->
+    <!--</style>-->
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/btn_gain_integral_shape</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Widget.CirclePageIndicator" parent="@android:style/Widget">
+        <item name="isJustified">@bool/default_circle_indicator_is_justified</item>
+        <item name="fillColor">@color/default_circle_indicator_fill_color</item>
+        <item name="orientation">@integer/default_circle_indicator_orientation</item>
+        <item name="radius">@dimen/default_circle_indicator_radius</item>
+        <item name="isSnapped">@bool/default_circle_indicator_is_snapped</item>
+        <item name="strokeColor">@color/default_circle_indicator_stroke_color</item>
+        <item name="strokeWidth">@dimen/default_circle_indicator_stroke_width</item>
+    </style>
+
+    <style name="EmployeeIntroductionShadow">
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowColor">@color/tv_photo_wall_information_text_shadow_color</item>
+    </style>
+
+</resources>

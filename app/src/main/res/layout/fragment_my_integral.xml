@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item_my_rank_color"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/tv_txt_year_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/year_integral"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/tv_year_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_txt_year_integral"
+            android:layout_toRightOf="@+id/tv_txt_year_integral"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/tv_txt_month_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_txt_year_integral"
+            android:layout_marginTop="20dp"
+            android:text="@string/month_integral"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/tv_month_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_txt_month_integral"
+            android:layout_toRightOf="@+id/tv_txt_month_integral"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+
+        <TextView
+            android:id="@+id/tv_grade_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_txt_month_integral"
+            android:layout_marginTop="20dp"
+            android:text="@string/my_integral_grade_title_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/tv_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_grade_title"
+            android:layout_toRightOf="@+id/tv_grade_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/my_integral_grade_text_size" />
+
+        <ImageView
+            android:id="@+id/iv_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pbar_integral"
+            android:text="@string/txt_progress"
+            android:textColor="@color/tv_tipsscore_text_color"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/tv_tipsscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_grade_title"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/tv_tipsscore_text_color"
+            android:textSize="@dimen/font_size_14" />
+
+        <ProgressBar
+            android:id="@+id/pbar_integral"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/progressBar_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_tipsscore"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="6dp"
+            android:progressDrawable="@drawable/progressbar" />
+
+
+        <Button
+            android:id="@+id/btn_upgrade"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/pbar_integral"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/btn_gain_integral_shape"
+            android:gravity="center"
+            android:text="@string/btn_upgrade_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_18" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rl_container"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/tv_detail_title"
+        android:textColor="#888888"
+        android:textSize="@dimen/font_size_14" />
+
+    <ListView
+        android:id="@+id/lv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_detail_title"
+        android:dividerHeight="0.3dp"
+        android:footerDividersEnabled="true" />
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_detail_title"
+        android:gravity="center"
+        android:text="@string/list_empty_message"
+        android:textColor="@color/c_line_color"
+        android:textSize="@dimen/font_size_18" />
+
+</RelativeLayout>

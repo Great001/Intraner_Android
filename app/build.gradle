@@ -1,0 +1,166 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
+apply plugin: 'com.android.application'
+apply plugin: 'de.felixschulze.gradle.hockeyapp'
+
+loadConfiguration()
+
+ext {
+    environment = project.hasProperty('env') ? env : 'debug'
+    tempDir = "build/temp/${environment}"
+}
+
+def loadConfiguration() {
+    def environment = hasProperty('env') ? env : 'qa'
+    project.ext['environment'] = environment
+    def configFile = new GroovyScriptEngine('.').with {
+        loadScriptByName('app/build-config.groovy')
+    }
+    def config = new ConfigSlurper(environment).parse(configFile)
+    project.ext['buildConfig'] = config
+    project.ext['apkVersionName'] = config.apkVersionName
+    project.ext['apkVersionCode'] = config.apkVersionCode
+}
+
+dependencies {
+    //    compile project(':android-support-lib')
+    compile 'net.hockeyapp.android:HockeySDK:3.6.2'
+    compile project(':tkgz-library')
+    compile project(':XOApp')
+    compile fileTree(dir: 'libs', exclude: 'android-support-v4.jar', include: '*.jar')
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:cardview-v7:23.0.1'
+    compile 'com.baoyz.swipemenulistview:library:1.3.0'
+    compile files('libs/BaiduLBS_Android.jar')
+}
+
+android {
+    buildToolsVersion "$androidBuildToolsVersion"
+    compileSdkVersion "$androidCompileSdkVersion".toInteger()
+    compileOptions.encoding = 'GBK'
+    defaultConfig {
+        versionName apkVersionName
+        applicationId "com.xogrp.tkgz"
+        minSdkVersion 15
+        targetSdkVersion 23
+        multiDexEnabled true
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            /* resources.srcDirs = ['src/main/res']
+             aidl.srcDirs = ['src']
+             renderscript.srcDirs = ['src']*/
+            res.srcDirs = ['src/main/res']
+            assets.srcDirs = ['src/main/assets']
+
+        }
+    }
+    project.ext {
+        archivesBaseName = 'Tkgz'
+    }
+    signingConfigs {
+        qa {
+            storeFile file('qa.keystore')
+            storePassword 'lookbook'
+            keyAlias 'android.keystore'
+            keyPassword 'lookbook'
+        }
+        release {
+            storeFile file('release.keystore')
+            storePassword 'th3kn0t'
+            keyAlias 'LookBook'
+            keyPassword 'th3kn0t'
+        }
+    }
+    buildTypes {
+        debug {
+            sourceSets.debug {
+                res.srcDirs = ["${tempDir}/res"]
+                assets.srcDirs = ["${tempDir}/assets"]
+            }
+            zipAlignEnabled true
+            signingConfig signingConfigs.qa
+        }
+
+        qa {
+            sourceSets.qa {
+                res.srcDirs = ["${tempDir}/res"]
+                assets.srcDirs = ["${tempDir}/assets"]
+            }
+            zipAlignEnabled true
+            signingConfig signingConfigs.qa
+        }
+        release {
+            sourceSets.release {
+                res.srcDirs = ["${tempDir}/res"]
+                assets.srcDirs = ["${tempDir}/assets"]
+            }
+            zipAlignEnabled true
+            signingConfig signingConfigs.release
+        }
+    }
+    packagingOptions {
+        exclude 'META-INFTICE'
+        exclude 'META-INFtice.txt'
+        exclude 'META-INFcense.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+
+}
+
+hockeyapp {
+    apiToken = "$buildConfig.hockeyapp_apiToken"
+    releaseType = 0
+    notify = 1
+    status = 2
+    notesType = 1
+    notes = "$buildConfig.releaseNotes"
+    mappingFileNameRegex="R.txt"
+}
+
+
+
+android.applicationVariants.all { variant ->
+    def setupConfigInAssetsTaskName = "setupGsConfigInAssets${variant.dirName.capitalize()}"
+
+    def copyResourcesTaskName = "copyGsResources${variant.dirName.capitalize()}"
+
+    task(setupConfigInAssetsTaskName, type: Copy) {
+        from("properties-templates/tkgz.properties") {
+            def configProperties = new Properties()
+            file("properties-templates/tkgz-${environment}.properties").withInputStream {
+                configProperties.load(it);
+            }
+            filter(ReplaceTokens, tokens: configProperties)
+        }
+        from('assets') {
+            exclude 'tkgz.properties'
+        }
+        into "${tempDir}/assets"
+    }
+
+    task(copyResourcesTaskName) {
+        copy {
+            from 'src/main/res'
+            into "${tempDir}/res"
+        }
+
+//        File stringFile = file("${tempDir}/res/values/strings.xml")
+//        String contentString = stringFile.getText('UTF-8')
+//        stringFile.write(contentString, 'UTF-8')
+    }
+
+    tasks["prepare${variant.dirName.capitalize()}Dependencies"].dependsOn "${setupConfigInAssetsTaskName}", "${copyResourcesTaskName}"
+
+    variant.javaCompile.options.encoding = 'UTF-8'
+}
+
+

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tab_layout_title">
+        <item>@string/tab_Current_Month_Person</item>
+        <item>@string/tab_Current_Year_Person</item>
+        <item>@string/tab_Current_Quarter_Team</item>
+        <item>@string/tab_Current_Year_Team</item>
+
+    </string-array>
+
+    <string-array name="message_variety">
+        <item>@string/messages_published</item>
+        <item>@string/messages_drafts</item>
+    </string-array>
+
+    <string-array name="appellation_item">
+        <item>@string/level_one</item>
+        <item>@string/level_two</item>
+        <item>@string/level_three</item>
+        <item>@string/level_four</item>
+        <item>@string/level_five</item>
+    </string-array>
+        <string-array name="level_image_item">
+        <item>@drawable/icon_metal5</item>
+        <item>@drawable/icon_metal4</item>
+        <item>@drawable/icon_metal3</item>
+        <item>@drawable/icon_metal2</item>
+        <item>@drawable/icon_metal1</item>
+    </string-array>
+
+    <integer-array name="progressbar_max_item">
+        <item>6800</item>
+        <item>7000</item>
+        <item>8000</item>
+        <item>10000</item>
+    </integer-array>
+
+    <integer-array name="level_total_score_item">
+        <item>6800</item>
+        <item>13800</item>
+        <item>21800</item>
+        <item>31800</item>
+    </integer-array>
+
+    <string-array name="tablayout_title">
+        <item>@string/txt_team</item>
+        <item>@string/txt_member</item>
+    </string-array>
+
+    <array name="refresh_color">
+        <item>@color/holo_blue_bright</item>
+        <item>@color/holo_green_light</item>
+        <item>@color/holo_orange_light</item>
+        <item>@color/holo_red_light</item>
+    </array>
+
+    <string-array name="ranking_title">
+        <item>@string/ranking_title_1</item>
+        <item>@string/ranking_title_2</item>
+        <item>@string/ranking_title_3</item>
+        <item>@string/ranking_title_4</item>
+    </string-array>
+
+    <string-array name="event_status">
+        <item>@string/event_status_1</item>
+        <item>@string/event_status_2</item>
+        <item>@string/event_status_3</item>
+        <item>@string/event_status_4</item>
+        <item>@string/event_status_5</item>
+        <item>@string/event_status_6</item>
+    </string-array>
+
+    <!--<array name="event_status_text_color">-->
+    <!--<item>@color/event_status_1</item>-->
+    <!--<item>@color/event_status_2</item>-->
+    <!--<item>@color/event_status_3</item>-->
+    <!--<item>@color/event_status_4</item>-->
+    <!--<item>@color/event_status_5</item>-->
+    <!--<item>@color/event_status_6</item>-->
+    <!--</array>-->
+
+    <!--<integer-array name="event_status_background_color">-->
+    <!--<item>@color/event_status_background_1</item>-->
+    <!--<item>@color/event_status_background_2</item>-->
+    <!--<item>@color/event_status_background_3</item>-->
+    <!--<item>@color/event_status_background_4</item>-->
+    <!--<item>@color/event_status_background_5</item>-->
+    <!--<item>@color/event_status_background_6</item>-->
+    <!--</integer-array>-->
+
+    <string-array name="month_chinese">
+        <item>@string/month_star_pager_title_month_one</item>
+        <item>@string/month_star_pager_title_month_two</item>
+        <item>@string/month_star_pager_title_month_three</item>
+        <item>@string/month_star_pager_title_month_four</item>
+        <item>@string/month_star_pager_title_month_five</item>
+        <item>@string/month_star_pager_title_month_six</item>
+        <item>@string/month_star_pager_title_month_seven</item>
+        <item>@string/month_star_pager_title_month_eight</item>
+        <item>@string/month_star_pager_title_month_nine</item>
+        <item>@string/month_star_pager_title_month_ten</item>
+        <item>@string/month_star_pager_title_month_eleven</item>
+        <item>@string/month_star_pager_title_month_twelve</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>@string/month_star_january</item>
+        <item>@string/month_star_february</item>
+        <item>@string/month_star_march</item>
+        <item>@string/month_star_april</item>
+        <item>@string/month_star_may</item>
+        <item>@string/month_star_june</item>
+        <item>@string/month_star_july</item>
+        <item>@string/month_star_august</item>
+        <item>@string/month_star_september</item>
+        <item>@string/month_star_october</item>
+        <item>@string/month_star_november</item>
+        <item>@string/month_star_december</item>
+    </string-array>
+
+    <string-array name="hours_in_day">
+        <item>@string/hour_one</item>
+        <item>@string/hour_two</item>
+        <item>@string/hour_three</item>
+        <item>@string/hour_four</item>
+        <item>@string/hour_five</item>
+        <item>@string/hour_six</item>
+        <item>@string/hour_seven</item>
+        <item>@string/hour_eight</item>
+        <item>@string/hour_nine</item>
+        <item>@string/hour_ten</item>
+        <item>@string/hour_eleven</item>
+        <item>@string/hour_twelve</item>
+    </string-array>
+
+    <string-array name="AmOrPm">
+        <item>@string/hour_pm</item>
+        <item>@string/hour_am</item>
+    </string-array>
+
+</resources>

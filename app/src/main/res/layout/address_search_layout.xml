@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/addr_search_action_bar_height"
+        android:orientation="horizontal"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/addr_search_ll_icon_back_width"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="12dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/please_input_search_content"
+                android:drawableLeft="@drawable/find_gray_dddddd"
+                android:textSize="@dimen/et_searchbar_text_size"
+                android:background="@null"
+                />
+            <ImageView
+                android:id="@+id/iv_edit_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:src="@drawable/close"
+                android:layout_gravity="right|center_vertical"
+                android:visibility="gone"
+                android:clickable="false"
+                />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_address_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_history_record"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/addr_search_tv_history_record_height"
+        android:text="@string/history_record"
+        android:textSize="@dimen/poiResult_item_key_size"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="50dp"/>
+
+    <include
+        layout="@layout/line_divider_grey"
+        />
+
+
+   <ListView
+    android:id="@+id/lv_seached_history"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+    <include
+        layout="@layout/line_divider_grey"
+        />
+    <TextView
+        android:id="@+id/tv_record_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/addr_search_tv_record_remind_height"
+        android:text="@string/clean_history_record"
+        android:textColor="@color/green_app_system"
+        android:textSize="@dimen/search_history_remind_size"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        />
+    </LinearLayout>
+    </ScrollView>
+
+
+    <ListView
+        android:id="@+id/lv_address_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    </LinearLayout>
+

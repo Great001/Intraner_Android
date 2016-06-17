@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tl_navigation"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dip"-->
+        <!--android:background="@drawable/navigation_style" />-->
+
+    <RadioGroup
+        android:id="@+id/rg_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_train_item"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/navigation_style"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/txt_train_item"
+            android:textColor="@drawable/navigation_font_color"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_activity_item"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/navigation_style"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/txt_activity_item"
+            android:textColor="@drawable/navigation_font_color"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_originality_item"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/navigation_style"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/txt_originality_item"
+            android:textColor="@drawable/navigation_font_color"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_others_item"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/navigation_style"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/txt_others_item"
+            android:textColor="@drawable/navigation_font_color"
+            android:textSize="14sp" />
+
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_display_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

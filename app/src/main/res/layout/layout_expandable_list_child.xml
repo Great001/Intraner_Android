@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rank_message_item_height"
+        android:orientation="horizontal">
+
+        <com.xogrp.tkgz.View.CircleImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/header_big_default" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:textColor="@color/name_text_color"
+            android:textSize="@dimen/name_text_size" />
+
+        <TextView
+            android:id="@+id/tv_year_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_ranking"
+            android:textColor="@color/score_text_color"
+            android:textSize="@dimen/score_text_size" />
+
+        <TextView
+            android:id="@+id/tv_ranking"
+            android:layout_width="@dimen/ranking_text_width"
+            android:layout_height="@dimen/ranking_text_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/icon_rank_graybg"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_even_more"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rank_message_item_height">
+
+        <include layout="@layout/line_divider_grey" />
+
+        <TextView
+            android:id="@+id/tv_even_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/icon_green_arrow_down"
+            android:text="@string/tv_even_more_text"
+            android:textColor="@color/APP_GREEN"
+            android:textSize="@dimen/tv_even_more_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

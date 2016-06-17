@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="427dp"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/cb_selected_all"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:singleLine="true"
+        android:text="选择全部" />
+
+    <include layout="@layout/line_divider_grey" />
+
+    <ListView
+        android:id="@+id/lv_select_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_receiver_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="16dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_ensure"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/green_button"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@android:color/white" />
+</LinearLayout>

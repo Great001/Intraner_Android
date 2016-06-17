@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="@dimen/poi_ll_iv_locat_width"
+        android:layout_height="@dimen/poi_ll_iv_locat_height"
+        >
+    <ImageView
+        android:id="@+id/iv_icon_locat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/location2"
+        android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/poi_ll_tv_address_height"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:id="@+id/tv_PoiResult_addrName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tv_addrName_height"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/poiResult_item_key_size"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        />
+
+        <TextView
+            android:id="@+id/tv_PoiResult_addrDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/poiResult_item_detail_size"
+            android:textColor="@color/APP_GRAY"
+            android:gravity="center_vertical"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

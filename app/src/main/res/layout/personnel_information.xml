@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingLeft="16dp"
+        android:orientation="horizontal">
+
+        <com.xogrp.tkgz.View.CircleImageView
+            android:id="@+id/iv_information_avatar"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/header_big_sample" />
+        
+        <TextView
+            android:id="@+id/tv_information_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:textColor="@color/c_personnel_information_name_color"
+            android:gravity="center"
+            android:text="Nancy Feng"/>
+    </LinearLayout>
+
+    <include layout="@layout/line_divider_grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_personnel_information_title_color"
+                android:text="@string/message_section"/>
+
+            <TextView
+                android:id="@+id/tv_information_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="9dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_personnel_information_title_color"
+                android:layout_marginTop="35dp"
+                android:text="@string/message_superior"/>
+
+            <TextView
+                android:id="@+id/tv_information_superior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="9dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_personnel_information_title_color"
+                android:layout_marginTop="35dp"
+                android:text="@string/message_phone_number"/>
+
+            <TextView
+                android:id="@+id/tv_information_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="9dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_personnel_information_title_color"
+                android:text="@string/message_position"/>
+
+            <TextView
+                android:id="@+id/tv_information_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="9dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_personnel_information_title_color"
+                android:layout_marginTop="35dp"
+                android:text="@string/message_entry_time"/>
+
+            <TextView
+                android:id="@+id/tv_information_entry_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="9dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_personnel_information_title_color"
+                android:layout_marginTop="35dp"
+                android:text="@string/message_job_number"/>
+
+            <TextView
+                android:id="@+id/tv_information_job_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="9dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/c_personnel_information_title_color"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="16dp"
+        android:text="@string/message_remark"/>
+
+    <TextView
+        android:id="@+id/tv_information_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="9dp"
+        android:minLines="4"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
+</LinearLayout>

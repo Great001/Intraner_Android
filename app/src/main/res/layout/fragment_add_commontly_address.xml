@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginRight="@dimen/tv_create_activity_padding_right"
+        android:layout_marginLeft="@dimen/tv_create_activity_padding_left"
+        android:hint="@string/input_commontly_address"
+        android:id="@+id/edt_input_commontly_address"
+        android:textSize="@dimen/edt_create_activity_text_size"
+        android:singleLine="true"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:id="@+id/tv_keep_commontly_address"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/btn_background_color"
+        android:text="@string/keep"
+        android:layout_below="@+id/edt_input_commontly_address"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/btn_background_color"
+        android:text="@string/cancel"
+        android:layout_below="@+id/edt_input_commontly_address"
+        android:layout_alignRight="@+id/edt_input_commontly_address"
+        android:layout_alignEnd="@+id/edt_input_commontly_address" />
+</RelativeLayout>

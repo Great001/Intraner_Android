@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_news_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_results_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_results_title_item_height"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:drawableRight="@drawable/icon_arrow_right"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/results_title_text_size" />
+
+
+    <TextView
+        android:id="@+id/tv_train_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textSize="@dimen/train_content_text_size" />
+
+    <TextView
+        android:id="@+id/tv_current_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_current_time_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="16dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="10dip"
+        android:drawableLeft="@drawable/icon_time"
+        android:gravity="center_vertical"
+        android:drawablePadding="16dp"
+        android:textColor="@color/et_username_color" />
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <com.xogrp.tkgz.View.CircleImageView
+            android:id="@+id/v_avatar"
+            android:layout_width="@dimen/v_month_stars_pager_avatar_width"
+            android:layout_height="@dimen/v_month_stars_pager_avatar_height"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/header_nophoto" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_month_star_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="@color/tv_month_stars_title_color"
+        android:textSize="@dimen/font_size_18" />
+
+    <TextView
+        android:id="@+id/tv_month_star_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_24" />
+
+    <TextView
+        android:id="@+id/tv_month_star_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/tv_month_stars_position_color"
+        android:textSize="@dimen/font_size_16" />
+
+</LinearLayout>

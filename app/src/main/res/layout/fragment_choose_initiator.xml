@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_choose_initiator_width"
+        android:background="@color/green_button">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center|left"
+            android:hint="@string/btn_search_text"
+            android:drawableLeft="@drawable/ic_search"
+            android:id="@+id/et_search_initiator"
+            android:layout_marginTop="@dimen/tv_layout_margin_tb"
+            android:layout_marginBottom="@dimen/tv_layout_margin_tb"
+            android:layout_marginLeft="@dimen/tv_layout_margin_rl"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/ic_delete"
+            android:id="@+id/iv_delete_initiator"
+            android:layout_marginTop="@dimen/tv_layout_margin_tb"
+            android:layout_marginBottom="@dimen/tv_layout_margin_tb"
+            android:layout_marginRight="@dimen/tv_layout_margin_rl"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_initiator"/>
+
+</LinearLayout>

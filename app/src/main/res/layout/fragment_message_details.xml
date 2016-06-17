@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/message_title_font_size" />
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/icon_time"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/icon_time"
+        android:gravity="center_vertical"
+        android:text="2015-09-26 11:50:30 "
+        android:textSize="@dimen/message_time_font_size" />
+
+    <include layout="@layout/line_divider_grey" />
+
+    <LinearLayout
+        android:id="@+id/ll_receiver"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/txt_tv_send_to"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_receiver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:drawablePadding="16dp"
+            android:drawableRight="@drawable/icon_arrow_down"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/demo_txt_tv_all"
+            android:textColor="@color/black"
+            android:textSize="@dimen/message_content_font_size" />
+    </LinearLayout>
+
+    <include layout="@layout/line_divider_grey" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_green_style"
+            android:gravity="center"
+            android:text="@string/txt_btn_edit"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            android:background="@drawable/btn_gray_style"
+            android:gravity="center"
+            android:text="@string/txt_btn_delete"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/lv_display_my_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/c_line_color"
+            android:dividerHeight="@dimen/dialog_line_height" />
+
+        <include layout="@layout/line_divider_grey" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/list_empty_message"
+        android:textColor="@color/c_line_color"
+        android:textSize="@dimen/font_size_18" />
+
+</FrameLayout>

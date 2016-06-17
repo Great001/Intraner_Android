@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+dependencies {
+	compile fileTree(dir: 'libs', includes: ['*.jar'])
+}
+
+sourceSets {
+	main {
+		java.srcDir 'src'
+		output.classesDir 'build/classes'
+	}
+}
+
+jar {
+	archiveName = 'GuestServicesLibrary.jar'
+}

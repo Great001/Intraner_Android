@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/change_password"
+        app:showAsAction="never"
+        android:title="修改密码" />
+
+    <item
+        android:id="@+id/clear_cache"
+        app:showAsAction="never"
+        android:title="清空缓存" />
+
+    <item
+        android:id="@+id/feedback"
+        app:showAsAction="never"
+        android:title="意见反馈" />
+
+    <item
+        android:id="@+id/about_the_knot"
+        app:showAsAction="never"
+        android:title="关于诺特" />
+
+    <item
+        android:id="@+id/exit_login"
+        app:showAsAction="never"
+        android:title="退出登录" />
+</menu>

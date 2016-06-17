@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_login_topbg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/abc_action_bar_home_description"
+        android:scaleType="fitXY"
+        android:src="@mipmap/login_topbg" />
+
+    <RelativeLayout
+        android:id="@+id/ll_username"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/iv_login_topbg"
+        android:layout_marginTop="40dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_username"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/txt_hint_email"
+                android:inputType="textVisiblePassword"
+                android:singleLine="true"
+                android:textColorHint="@color/et_username_color"
+                android:textSize="@dimen/et_username_text_size"
+                android:typeface="normal" />
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/ll_username"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="12dp">
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/txt_hint_password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="@color/et_username_color"
+            android:textSize="@dimen/et_pwd_text_size"
+            android:typeface="normal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_below="@+id/til_password"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:text="@string/txt_login_button"
+        android:textColor="@color/btn_login_color"
+        android:textSize="@dimen/btn_login_text_size"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/tv_retrieve_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_login"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/txt_retrieve_password"
+        android:textSize="@dimen/font_size_14" />
+
+    <TextView
+        android:id="@+id/tv_apply_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btn_login"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/txt_apply_account"
+        android:textSize="@dimen/font_size_14" />
+
+</RelativeLayout>

@@ -1,0 +1,264 @@
+<resources>
+
+
+    <!-- Font Size -->
+    <dimen name="font_size_10">10sp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="font_size_22">22sp</dimen>
+    <dimen name="font_size_24">24sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="default_margin">8dp</dimen>
+    <dimen name="toolbar_height">48dp</dimen>
+
+    <dimen name="display_my_goods_rl">60dip</dimen>
+    <dimen name="dialog_width">300dp</dimen>
+    <dimen name="dialog_title_text_size">20sp</dimen>
+    <dimen name="lable_tip_text_size">14sp</dimen>
+    <dimen name="et_username_text_size">14sp</dimen>
+    <dimen name="et_pwd_text_size">14sp</dimen>
+    <dimen name="btn_login_text_size">18sp</dimen>
+    <dimen name="dialog_info_text_size">16sp</dimen>
+    <dimen name="dialog_button_height">56dp</dimen>
+    <dimen name="dialog_button_min_height">45dp</dimen>
+    <dimen name="dialog_button_text_size">17sp</dimen>
+    <dimen name="dialog_line_height">0.3dp</dimen>
+    <dimen name="dialog_line_margin_top">17dp</dimen>
+
+    <!-- integral rank-->
+    <dimen name="radiogroup_height">48dp</dimen>
+    <dimen name="viewpager_height">0dp</dimen>
+    <dimen name="update_time_heght">24dp</dimen>
+    <dimen name="update_time_text_size">12sp</dimen>
+    <dimen name="rank_message_item_height">56dp</dimen>
+    <dimen name="icon_width">40dp</dimen>
+    <dimen name="icon_height">40dp</dimen>
+    <dimen name="apostrophe_text_size">14sp</dimen>
+    <dimen name="name_text_size">16sp</dimen>
+    <dimen name="score_text_size">16sp</dimen>
+    <dimen name="ranking_text_width">24dp</dimen>
+    <dimen name="ranking_text_height">24dp</dimen>
+    <dimen name="view_line_height">0.3px</dimen>
+    <dimen name="radio_button_tab_text_size">14sp</dimen>
+
+    <!-- my integral-->
+    <dimen name="rl_container_height">192dp</dimen>
+    <dimen name="my_integral_title_text_size">16sp</dimen>
+    <dimen name="my_integral_score_text_size">24sp</dimen>
+    <dimen name="my_integral_grade_title_text_size">16sp</dimen>
+    <dimen name="my_integral_grade_text_size">16sp</dimen>
+    <dimen name="tv_tipsscore_text_size">14sp</dimen>
+    <dimen name="progressBar_height">8dp</dimen>
+    <dimen name="btn_upgrade_text_size">18sp</dimen>
+    <dimen name="tv_detail_height">40dp</dimen>
+    <dimen name="tv_detail_text_size">14sp</dimen>
+
+    <!-- search integral-->
+    <dimen name="rl_search_container_height">192dp</dimen>
+    <dimen name="iv_date_height">24dp</dimen>
+    <dimen name="iv_date_width">24dp</dimen>
+    <dimen name="btn_search_text_size">18sp</dimen>
+    <dimen name="tv_search_result_title_height">40dp</dimen>
+    <dimen name="tv_search_result_title_text_size">14sp</dimen>
+    <dimen name="integral_detail_item_height">72dp</dimen>
+    <dimen name="tv_integral_detail_item_title_text_size">16sp</dimen>
+    <dimen name="tv_integral_detail_item_score_text_size">16sp</dimen>
+    <dimen name="iv_integral_detail_item_clock_height">16sp</dimen>
+    <dimen name="iv_integral_detail_item_clock_width">16sp</dimen>
+    <dimen name="tv_integral_detail_item_date_text_size">14sp</dimen>
+    <dimen name="spinner_selector_height">20dp</dimen>
+    <dimen name="spinner_selector_text_size">8sp</dimen>
+
+    <!-- team integral -->
+    <dimen name="team_integral_team_name_text">24sp</dimen>
+    <dimen name="team_integral_title_text_size">16sp</dimen>
+    <dimen name="team_integral_score_text_size">24sp</dimen>
+    <dimen name="team_integral_grade_title_text_size">16sp</dimen>
+    <dimen name="team_integral_grade_text_size">16sp</dimen>
+    <dimen name="team_inquire_result_amount_text_size">14sp</dimen>
+    <dimen name="expandable_list_view_parent_item_height">40dp</dimen>
+
+    <!-- integral exchange -->
+    <dimen name="btn_exchange_width">70dp</dimen>
+    <dimen name="btn_exchange_height">30dp</dimen>
+    <dimen name="btn_exchange_text_size">12sp</dimen>
+    <dimen name="tv_even_more_text_size">16sp</dimen>
+
+    <!-- gift details -->
+    <dimen name="btn_gift_details_text_size">10sp</dimen>
+
+    <!-- news page -->
+    <dimen name="ll_results_title_height">48dp</dimen>
+    <dimen name="results_title_text_size">16sp</dimen>
+    <dimen name="ll_current_time_height">20dp</dimen>
+    <dimen name="train_content_text_size">13sp</dimen>
+    <dimen name="ll_results_title_item_height">48dp</dimen>
+
+    <!-- personnel home -->
+    <dimen name="rl_home_top_height">168dp</dimen>
+    <dimen name="iv_icon_height">72dp</dimen>
+    <dimen name="iv_icon_width">72dp</dimen>
+    <dimen name="user_name_text_size">24sp</dimen>
+    <dimen name="rl_user_message_height">18dp</dimen>
+    <dimen name="line_height">18dp</dimen>
+    <dimen name="user_message_text_size">12sp</dimen>
+    <dimen name="two_tap_height">48dp</dimen>
+    <dimen name="tv_name_height">48dp</dimen>
+    <dimen name="rl_home_choose_height">56dp</dimen>
+    <dimen name="tv_home_choose_title_text_size">18sp</dimen>
+    <dimen name="tv_home_choose_text_size">16sp</dimen>
+    <dimen name="ll_team_integral_height">57dp</dimen>
+    <dimen name="tv_team_integral_text_size">16sp</dimen>
+    <!-- messages manage -->
+    <dimen name="item_padding_bottom">12dp</dimen>
+    <dimen name="item_title_font_size">16sp</dimen>
+    <dimen name="item_content_font_size">14sp</dimen>
+    <dimen name="item_time_font_size">12sp</dimen>
+    <dimen name="message_title_height">48dp</dimen>
+
+    <dimen name="message_title_font_size">16sp</dimen>
+    <dimen name="message_content_font_size">16sp</dimen>
+    <dimen name="message_time_font_size">12sp</dimen>
+
+    <!-- photo wall -->
+    <dimen name="photo_wall_alphabetScrollBar_height">30dp</dimen>
+    <dimen name="photo_wall_small_circleImageView_height">80dp</dimen>
+    <dimen name="photo_wall_small_circleImageView_width">80dp</dimen>
+    <dimen name="photo_wall_small_tv_employee_name_text_size">12sp</dimen>
+    <dimen name="photo_wall_big_circleImageView_height">96dp</dimen>
+    <dimen name="photo_wall_big_circleImageView_width">96dp</dimen>
+    <dimen name="photo_wall_big_tv_employee_name_text_size">14sp</dimen>
+    <dimen name="photo_wall_alphabetScrollBar_text_size">11sp</dimen>
+    <dimen name="photo_wall_alphabetScrollBar_margin_both_sides">16dp</dimen>
+
+    <!-- employee information -->
+    <dimen name="rl_self_introduction_height">240dp</dimen>
+    <dimen name="iv_self_introduction_icon_width">80dp</dimen>
+    <dimen name="iv_self_introduction_icon_height">80dp</dimen>
+    <dimen name="iv_leader_or_grade_width">32dp</dimen>
+    <dimen name="iv_leader_or_grade_height">32dp</dimen>
+    <dimen name="btn_height">48dp</dimen>
+    <dimen name="my_account_line_height">0.3dp</dimen>
+
+    <!-- Calendar View -->
+    <dimen name="rl_calendar_header_height">32dp</dimen>
+    <dimen name="calendar_header_text_size">12sp</dimen>
+    <dimen name="calendar_header_text_view_text_size">16sp</dimen>
+    <dimen name="ll_calendar_header_event_status_width">18dp</dimen>
+    <dimen name="iv_calendar_header_button_height">24dp</dimen>
+    <dimen name="iv_calendar_header_button_width">24dp</dimen>
+    <dimen name="ll_calendar_header_height">24dp</dimen>
+    <dimen name="v_calendar_focus_layout_height">28dp</dimen>
+    <dimen name="v_calendar_focus_layout_width">28dp</dimen>
+    <dimen name="calendar_view_item_height">32dp</dimen>
+    <dimen name="calendar_view_item_width">48dp</dimen>
+    <dimen name="tv_calendar_view_item_width">28dp</dimen>
+    <dimen name="tv_calendar_view_item_height">28dp</dimen>
+    <dimen name="rl_calendar_view_item_width">32dp</dimen>
+    <dimen name="rl_calendar_view_item_height">32dp</dimen>
+    <dimen name="iv_calendar_view_item_height">6dp</dimen>
+    <dimen name="iv_calendar_view_item_width">6dp</dimen>
+
+    <!-- Month Stars -->
+    <dimen name="v_month_stars_pager_avatar_height">160dp</dimen>
+    <dimen name="v_month_stars_pager_avatar_width">160dp</dimen>
+    <dimen name="iv_month_stars_pager_star_height">48dp</dimen>
+    <dimen name="iv_month_stars_pager_star_width">48dp</dimen>
+    <dimen name="rl_month_stars_star_height">304dp</dimen>
+    <dimen name="rl_month_stars_star_width">48dp</dimen>
+
+    <!-- New Commer -->
+    <dimen name="iv_new_comer_width">120dp</dimen>
+    <dimen name="iv_new_comer_height">120dp</dimen>
+    <dimen name="tv_new_comer_welcome_title_height">48dp</dimen>
+
+    <!--Add Activity-->
+    <dimen name="tv_activity_manage_padding_left">30dp</dimen>
+    <dimen name="tv_activity_manage_padding_right">10dp</dimen>
+    <dimen name="tv_activity_manage_text_size">16dp</dimen>
+    <dimen name="tv_distance_between_text_and_drawable">20dp</dimen>
+    <dimen name="tv_create_activity_padding_top">20dp</dimen>
+    <dimen name="tv_create_activity_padding_left">20dp</dimen>
+    <dimen name="tv_create_activity_padding_right">20dp</dimen>
+    <dimen name="tv_create_activity_padding_bottom">20dp</dimen>
+    <dimen name="tv_create_activity_text_size">16dp</dimen>
+    <dimen name="edt_create_activity_text_size">13dp</dimen>
+    <dimen name="np_margin_left">30dp</dimen>
+    <dimen name="np_margin_center">10dp</dimen>
+
+    <dimen name="layout_height">40dp</dimen>
+    <dimen name="btn_width">100dp</dimen>
+
+    <!--add the CalendarDataDialog dimen-->
+    <dimen name="tv_calendar_title">20sp</dimen>
+    <dimen name="ll_calendar_width_300">300dp</dimen>
+    <dimen name="ll_calendar_width_150">150dp</dimen>
+    <dimen name="vp_calendar_height_200">200dp</dimen>
+    <dimen name="img_common_address_30">30dp</dimen>
+    <dimen name="tv_common_address_200">200dp</dimen>
+    <dimen name="tv_double_point_28">28sp</dimen>
+    <!--create activity second page-->
+    <dimen name="tv_create_activity_70">70dp</dimen>
+    <dimen name="tv_create_activity_45">45dp</dimen>
+    <dimen name="tv_create_activity_100">100dp</dimen>
+    <dimen name="tv_create_activity_180">180dp</dimen>
+    <dimen name="tv_create_activity_text_size_18">18sp</dimen>
+    <dimen name="tv_create_activity_text_size_28">28sp</dimen>
+    <dimen name="tv_create_activity_40">40dp</dimen>
+    <dimen name="btn_create_activity_10">10dp</dimen>
+    <dimen name="ll_create_activity_10">10dp</dimen>
+    <dimen name="rl_create_activity_90">90dp</dimen>
+
+    <!-- choose initiator-->
+    <dimen name="ll_choose_initiator_width">60dp</dimen>
+    <dimen name="tv_layout_margin_tb">10dp</dimen>
+    <dimen name="tv_layout_margin_rl">15dp</dimen>
+
+    <!--create activity page one-->
+    <dimen name="tv_remind_wordcount">10sp</dimen>
+    <dimen name="tv_common">15sp</dimen>
+    <dimen name="edt_hint_size">16sp</dimen>
+    <dimen name="dialog_title_size">20sp</dimen>
+    <dimen name="dialog_text_size">20sp</dimen>
+    <dimen name="poiResult_item_key_size">20sp</dimen>
+    <dimen name="poiResult_item_detail_size">15sp</dimen>
+    <dimen name="search_history_remind_size">25sp</dimen>
+    <dimen name="et_searchbar_text_size">20sp</dimen>
+    
+    <dimen name="addr_search_action_bar_height">48dp</dimen>
+    <dimen name="addr_search_ll_icon_back_width">50dp</dimen>
+    <dimen name="addr_search_tv_history_record_height">60dp</dimen>
+    <dimen name="addr_search_tv_record_remind_height">50dp</dimen>
+    
+    <dimen name="poi_ll_iv_locat_width">50dp</dimen>
+    <dimen name="poi_ll_iv_locat_height">80dp</dimen>
+    <dimen name="poi_ll_tv_address_height">80dp</dimen>
+
+
+    <dimen name="ll_tv_dateTime_height">30dp</dimen>
+    <dimen name="rbtn_freaddr_height">30dp</dimen>
+    <dimen name="rbtn_baiduaddress_height">30dp</dimen>
+    <dimen name="tv_freaddr_height">30dp</dimen>
+    <dimen name="tv_baiduAddr_height">30dp</dimen>
+    <dimen name="mv_baidu_height">200dp</dimen>
+    <dimen name="et_content_height">40dp</dimen>
+    <dimen name="btn_nextStep_width">120dp</dimen>
+    <dimen name="btn_nextStep_height">40dp</dimen>
+    <dimen name="dt_picker_tv_dialog_title_height">50dp</dimen>
+    <dimen name="dt_picker_tabwidget_height">40dp</dimen>
+    <dimen name="et_newactivity_minHeight">80dp</dimen>
+    <dimen name="tv_addrName_height">30dp</dimen>
+
+
+    <dimen name="tab_line_shape_height">3dp</dimen>
+    <dimen name="tab_list_item_margin">-3dp</dimen>
+    <dimen name="tab_stroke_width">3dp</dimen>
+
+    <dimen name="line_divider_height">0.3dp</dimen>
+</resources>

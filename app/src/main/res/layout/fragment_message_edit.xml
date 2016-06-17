@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:showDividers="end">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/txt_tv_title"
+            android:textSize="14sp" />
+
+        <include
+            layout="@layout/line_divider_grey"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignLeft="@+id/et_title"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="1dp" />
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@+id/tv_title"
+            android:background="@null"
+            android:hint="消息标题"
+            android:textColor="@color/black"
+            android:textSize="@dimen/message_title_font_size" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/txt_tv_send_to"
+            android:textSize="14sp" />
+
+        <include
+            layout="@layout/line_divider_grey"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignLeft="@+id/tv_receiver"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="1dp" />
+
+        <TextView
+            android:id="@+id/tv_receiver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@+id/to"
+            android:drawableEnd="@drawable/icon_arrow_down"
+            android:drawableRight="@drawable/icon_arrow_down"
+            android:gravity="center_vertical"
+            android:hint="请选择接收人"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/message_content_font_size" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/hint_txt_1"
+            android:minLines="5"
+            android:paddingTop="3dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_green_style"
+            android:gravity="center"
+            android:text="@string/txt_btn_send"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_green_style"
+            android:gravity="center"
+            android:text="@string/txt_btn_save"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

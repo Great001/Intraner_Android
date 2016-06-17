@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Grade Score-->
+    <integer name="level_first_score">6800</integer>
+    <integer name="level_second_score">13800</integer>
+    <integer name="level_third_score">21800</integer>
+    <integer name="level_fourth_score">31800</integer>
+
+    <!-- gift details -->
+    <integer name="tv_exchanged_weight">1</integer>
+    <integer name="tv_effective_weight">1</integer>
+    <integer name="swipe_menu_title_size">18</integer>
+    <integer name="swipe_menu_width">200</integer>
+
+</resources>

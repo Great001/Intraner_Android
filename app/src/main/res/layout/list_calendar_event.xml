@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp">
+
+    <LinearLayout
+        android:id="@+id/ll_container1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/tv_event_status"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.xogrp.tkgz.View.CircleImageView
+            android:id="@+id/civ_event_sign"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_event_title"
+            android:textColor="#9b9b9b"
+            android:textSize="@dimen/font_size_12" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_event_status"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/iv_arrow"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_arrow_right" />
+
+    <TextView
+        android:id="@+id/tv_txt_enroll_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_container1"
+        android:layout_marginLeft="16dp"
+        android:text="@string/txt_enroll_time"
+        android:textColor="#333333"
+        android:textSize="@dimen/font_size_12" />
+
+    <TextView
+        android:id="@+id/tv_enroll_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_txt_enroll_time"
+        android:layout_toRightOf="@+id/tv_txt_enroll_time"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_size_12" />
+
+    <TextView
+        android:id="@+id/tv_txt_event_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_txt_enroll_time"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/txt_event_time"
+        android:textColor="#333333"
+        android:textSize="@dimen/font_size_12" />
+
+
+    <TextView
+        android:id="@+id/tv_event_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_txt_event_time"
+        android:layout_toRightOf="@+id/tv_txt_event_time"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_size_12" />
+
+    <TextView
+        android:id="@+id/tv_upload_resource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_event_time"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/iv_arrow"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/icon_upload_resource"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/txt_uploader_resource"
+        android:textColor="#A2CF6C"
+        android:textSize="@dimen/font_size_12" />
+
+</RelativeLayout>

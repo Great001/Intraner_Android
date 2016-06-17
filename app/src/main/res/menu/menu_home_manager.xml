@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+    <!--android:id="@+id/home_manager_item"-->
+    <!--app:showAsAction="ifRoom"-->
+    <!--app:actionLayout="@layout/layout_action_bar_home_menu"-->
+    <!--android:title="管理员" />-->
+
+    <item
+        android:id="@+id/admin_entry"
+        app:showAsAction="never"
+        android:title="管理员"/>
+
+    <item
+        android:id="@+id/change_password"
+        app:showAsAction="never"
+        android:title="@string/menu_item_password_title" />
+
+    <item
+        android:id="@+id/change_language"
+        app:showAsAction="never"
+        android:title="@string/menu_item_language_title"
+        />
+
+    <item
+        android:id="@+id/about_the_knot"
+        app:showAsAction="never"
+        android:title="@string/menu_item_about_tk_title" />
+
+    <item
+        android:id="@+id/exit_login"
+        app:showAsAction="never"
+        android:title="@string/menu_item_logout_title" />
+</menu>

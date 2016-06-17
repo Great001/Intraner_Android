@@ -1,0 +1,632 @@
+<resources>
+    <string name="app_name">TK Intranet</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Login-->
+    <string name="txt_lable_tip">手机诺特用户登录</string>
+    <string name="txt_login_button">Log in</string>
+    <string name="txt_hint_password">Password</string>
+    <string name="txt_hint_email">Email</string>
+    <string name="txt_username_invalid">Email is required.</string>
+    <string name="txt_pwd_invalid">Password is required.</string>
+    <string name="txt_retrieve_password">Forget Passoword</string>
+    <string name="txt_apply_account">Apply Group Account</string>
+    <string name="txt_know">知道了</string>
+    <string name="txt_my_goods_detail">Gift Details</string>
+    <string name="txt_login_tip">登记成功，请尽快至Admin处领取！</string>
+    <string name="txt_login_failed">Failed to log in. Please try again.</string>
+
+    <string name="txt_input_email_to_retrieve_password">Input your email</string>
+    <string name="txt_sure">OK</string>
+    <string name="txt_activity_item">Event</string>
+    <string name="txt_activity_detail">Event Deatils</string>
+    <string name="txt_activity_detail_status">In Progress</string>
+    <string name="txt_train_item">Training</string>
+    <string name="txt_registration_count">15</string>
+    <string name="txt_counts"><font color="#D0021B">%1$s</font>/%2$s人</string>
+    <string name="txt_line">/</string>
+    <string name="txt_event_type">Event Type</string>
+    <string name="txt_integral_type">Point Type</string>
+    <string name="txt_originator">Initiator</string>
+    <string name="txt_lecturer">Lecturer</string>
+    <string name="txt_address">Address</string>
+    <string name="txt_recipient">Invited Guests</string>
+    <string name="txt_activity_max">Max No. of Attendees</string>
+    <string name="txt_technical_training">Technical Training</string>
+    <string name="txt_train_default_status">Pending</string>
+    <string name="txt_enroll_time">Time of Sign Up:&#160;</string>
+    <string name="txt_btn_registration">Sign Up</string>
+    <string name="txt_btn_check_in">Sign In</string>
+    <string name="txt_registration_time">从2014/10/22 至 2014/10/28</string>
+    <string name="txt_registration_times">2014/10/22 至\n2014/10/28</string>
+    <string name="txt_event_time">Event Time:&#160;</string>
+    <string name="txt_activity_time">从2014/10/22 10:30 至 2014/10/28 16:30</string>
+    <string name="txt_activity_times">2014/10/22 10:30 至\n2014/10/28 16:30</string>
+    <string name="txt_train_default_content">活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，活动具体详细内容，</string>
+    <string name="txt_train_lv_item_title">安卓开发培训</string>
+    <string name="txt_event_content">Training Contents</string>
+    <string name="txt_originality_item">创意</string>
+    <string name="txt_others_item">其他</string>
+    <string name="txt_not_beginning">未开始</string>
+    <string name="txt_check_in_start">报名中</string>
+    <string name="txt_check_in_end">报名结束</string>
+    <string name="txt_check_in_on">已报名</string>
+    <string name="txt_ing">进行中</string>
+    <string name="txt_completed">已完成</string>
+    <string name="txt_use">使&#160;&#160;用</string>
+    <string name="txt_has_brought">已&#160;&#160;领</string>
+    <string name="txt_default_tool">延时工具</string>
+    <string name="txt_delay_tool">xo grou马克杯一只</string>
+    <string name="txt_integral">1000积分</string>
+    <string name="txt_my_goods">My Gifts</string>
+    <string name="txt_uploader_resource">Event has ended. Please upload photos or documents to Intranet.</string>
+
+    <string name="event_status_1">Pending</string>
+    <string name="event_status_2">Sign Up</string>
+    <string name="event_status_3">Signed Up</string>
+    <string name="event_status_4">Sign Up - Ends</string>
+    <string name="event_status_5">In Progress</string>
+    <string name="event_status_6">Ended</string>
+    <string name="event_status_2_not_allowed">You are not invited.</string>
+
+    <!-- custom dialog -->
+    <string name="txt_btn_ok">OK</string>
+    <string name="txt_btn_cancel">CANCEL</string>
+    <string name="txt_btn_title">Whoops!</string>
+    <string name="dialog_content_ensure_exchange">Are you sure to exchange&#160; </string>
+    <string name="dialog_content_exchange_success">Exchanged successfully.</string>
+    <string name="dialog_content_exchange_failure">Failed to exchange.</string>
+    <string name="dialog_title_reminder">Attention</string>
+    <string name="dialog_content_login_failed">Email or password is incorrect.</string>
+    <string name="dialog_string_space"> </string>
+    <string name="dialog_btn_call">Call</string>
+    <string name="dialog_content_call">Call Phone</string>
+
+    <string name="message_press_once_more_time_to_exit">Click one more time to exist app.</string>
+
+    <!-- actionbar title -->
+    <string name="actionbar_title_master_page">Admin</string>
+    <string name="actionbar_title_my_goods">My Gifts</string>
+    <string name="actionbar_title_home_page">&#160;&#160;Homepage</string>
+    <string name="actionbar_title_integral_rank_page">Point Ranking</string>
+    <string name="actionbar_title_my_integral_page">My Points</string>
+    <string name="actionbar_title_search_integral_page">Point Search</string>
+    <string name="actionbar_title_team_integral_page">Team Points</string>
+    <string name="actionbar_title_search_result">Search Result</string>
+    <string name="actionbar_title_integral_exchange_page">Point Exchange</string>
+    <string name="actionbar_title_news_list_page">Notification List</string>
+    <string name="actionbar_title_news_details_page">News Details</string>
+    <string name="actionbar_title_my_training_page">My Events</string>
+    <string name="actionbar_title_message_manage">Notification Management</string>
+    <string name="actionbar_title_message_details">Notification Details</string>
+    <string name="actionbar_title_message_add_new">Add Notification</string>
+    <string name="actionbar_title_edit_personnel_information">编辑员工资料</string>
+    <string name="actionbar_title_add_personnel">新增员工</string>
+    <string name="actionbar_title_integral_manager_page">Point Management</string>
+    <string name="actionbar_title_activity_manage">Event Management</string>
+    <string name="actionbar_title_activity_type_manage">Event Type Management</string>
+    <string name="actionbar_title_search_employee">Search Staff</string>
+    <string name="actionbar_title_photo_wall_page">Staff Wall</string>
+    <string name="actionbar_title_self_introduction_page">Profile</string>
+    <string name="actionbar_title_my_account_page">Homepage</string>
+    <string name="actionbar_title_event">Recent Events</string>
+    <string name="actionbar_title_month_stars_page">Staff of the Month</string>
+    <string name="actionbar_title_new_comer_page">New Staff</string>
+    <string name="actionbar_title_retrieve_password">Forget Password</string>
+
+    <!-- my integral -->
+    <string name="apostrophe_text">···</string>
+    <string name="date_time_format">yyyy-MM-dd HH:mm</string>
+    <string name="month_name_format">MMMM yyyy</string>
+    <string name="time_format">HH:mm</string>
+    <!--<string name="date_format">yyyy/MM/dd</string>-->
+    <string name="date_format">yyyy-MM-dd</string>
+    <string name="update_time">更新于</string>
+    <string name="no_update_time">未更新</string>
+    <string name="tab_Current_Month_Person">Staff Monthly</string>
+    <string name="tab_Current_Year_Person">Staff Yearly</string>
+    <string name="tab_Current_Quarter_Team">Team Quarterly</string>
+    <string name="tab_Current_Year_Team">Team Yearly</string>
+    <string name="level_one">Level 1</string>
+    <string name="level_two">Level 2</string>
+    <string name="level_three">Level 3</string>
+    <string name="level_four">Level 4</string>
+    <string name="level_five">Level 5</string>
+    <string name="update_text">Upgrade to</string>
+    <string name="update_tips_text">还需要</string>
+    <string name="expectation_text"> </string>
+    <string name="the_highest_level_tips_text">恭喜，你已是最高等级/宗师，请受我一拜</string>
+    <string name="the_error_message">Error! Please re-load again.</string>
+    <string name="date_is_empty_tips">Select Date</string>
+    <string name="date_is_error_tips">End date should be later than start date.</string>
+    <string name="my_integral_title_text">Points:&#160;</string>
+    <string name="my_integral_grade_title_text">Privilege:&#160;</string>
+    <string name="btn_upgrade_text">Earn Points</string>
+    <string name="tv_detail_title">Point Logs of Recent 30 Days</string>
+
+    <!-- search integral-->
+    <string name="et_start_date_hint">Start Date</string>
+    <string name="et_end_date_hint">End Date</string>
+    <string name="btn_search_text">Search</string>
+    <string name="tv_search_result_title_text">Search Result</string>
+    <string name="tv_the_first_name_text">Level 5:&#160;</string>
+    <string name="tv_the_second_name_text">Level 4:&#160;</string>
+    <string name="tv_the_third_name_text">Level 3:&#160;</string>
+    <string name="tv_the_fourth_name_text">Level 2:&#160;</string>
+    <string name="tv_the_fifth_name_text">Level 1:&#160;</string>
+    <string name="spinner_default_choose">All Staff</string>
+    <string name="spinner_member_choose">Staff</string>
+
+    <!-- team integral -->
+    <string name="team_integral_title_text">积分：</string>
+    <string name="team_integral_member_amount_text">人数：</string>
+    <string name="tv_team_detail_title">本月团队积分明细</string>
+    <string name="tv_date_text"> to </string>
+    <string name="tv_rank_message_item_even_more_text">More...</string>
+
+    <!-- integral exchange -->
+    <string name="btn_exchange_text">Exchange</string>
+    <string name="tv_even_more_text">More</string>
+    <string name="actionbar_title_change_password_page">&#160;&#160;&#160;Change Password</string>
+    <string name="actionbar_title_feedback_page">&#160;&#160;&#160;Feedback</string>
+    <string name="actionbar_title_about_the_knot_page">&#160;&#160;&#160;About The Knot</string>
+    <string name="actionbar_title_personnel_information_page">&#160;&#160;&#160;Profile</string>
+
+    <!-- home page -->
+    <string name="personnel_job">Job Title:&#160;</string>
+    <string name="manager_job">职位:&#160;管理员</string>
+    <string name="personnel_level">Privilege:&#160;</string>
+    <string name="year_integral">Annual Points:&#160;</string>
+    <string name="month_integral">Monthly Points:&#160;</string>
+    <string name="personnel_name">Alex Qiu</string>
+    <string name="integral_rank_list">Point Ranking</string>
+    <string name="activity">Recent Events</string>
+    <string name="my_integral">My Points</string>
+    <string name="team_integral">团队积分</string>
+    <string name="my_activity">My Events</string>
+    <string name="integral_exchange">Point Exchange</string>
+    <string name="message_notice">Notifications</string>
+    <string name="system_manage">系统管理</string>
+    <string name="personnel_manage">员工管理</string>
+    <string name="message_manage">消息管理</string>
+    <string name="integral_manage">积分管理</string>
+    <string name="activity_manage">活动管理</string>
+    <string name="activity_type_manage">活动类型管理</string>
+    <string name="photo_wall">Staff Wall</string>
+    <string name="month_star">Monthly Star</string>
+    <string name="new_staff">New Staff</string>
+
+    <!-- change password -->
+    <string name="btn_change_password_txt">OK</string>
+    <string name="message_change_password">Please input original password and new password.</string>
+    <string name="hint_old_password">Original Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="hint_repeat_password">Input New Password Again</string>
+    <string name="change_password_empty_tip">Input error. Please double check!</string>
+    <string name="wrong_repeat_new_password_tip">New passwords are not consistent. Please input again.</string>
+    <string name="wrong_old_password_tip">Original password is incorrect. Please input again.</string>
+    <string name="wrong_new_password_too_short_tip">Password should be 8 characters at least！</string>
+    <string name="change_password_success">Password is updated. Please re-log in.</string>
+
+    <!-- clear cache -->
+    <string name="dialog_title">Clear Cache</string>
+    <string name="dialog_dialog_format">缓存占用空间：&#032;</string>
+    <string name="dialog_clear_button">Clear</string>
+    <string name="dialog_cancel_button">Cancel</string>
+
+    <!-- feedback -->
+    <string name="message_send_to">发至</string>
+    <string name="message_the_knot">手机诺特</string>
+    <string name="message_send_name">姓名</string>
+    <string name="hint_send_name">(可选)</string>
+    <string name="hint_send_message">在这里写下你的宝贵意见^_^</string>
+    <string name="message_send_button">发送</string>
+
+    <!-- about the knot -->
+    <string name="message_the_knot_version">The Knot 1.0.1</string>
+    <string name="message_core_download">QR Code</string>
+    <string name="message_welcome_page">Splash Page</string>
+    <string name="message_check_new_versions">Check New Version</string>
+    <string name="message_the_knot_copyright">\nCopyright \u00A9 2015 Theknot software development.\nAll Rights Reserved.</string>
+    <string name="update_version_dialog_title">Version Update</string>
+    <string name="dialog_content_title">Latest version is available:&#160;</string>
+    <string name="dialog_download">Download</string>
+    <string name="dialog_update_message">更新内容:\n1.【新增】 清理本地图片源文件的功能。\n2.【新增】个人主页会增加提示。\n3.【修复】
+        修复WIFI环境下版本更新问题。\n4.【修复】在某些界面可能出现图片重叠的问题。\n5.【修复】兑换礼品时遇到礼品已经失效时，礼品目录有可能不更新的问题。</string>
+
+    <!-- personnel information -->
+    <string name="message_section">Department</string>
+    <string name="message_position">Job Title</string>
+    <string name="message_superior">Supervisor</string>
+    <string name="message_entry_time">入职时间</string>
+    <string name="message_phone_number">手机号码</string>
+    <string name="message_job_number">工号</string>
+    <string name="message_remark">备注</string>
+
+
+    <!-- messagelist page -->
+    <string name="message_type_pass">审核通过</string>
+    <string name="message_type_failure">审核失败</string>
+
+    <!-- message manage-->
+    <string name="messages_published">已发布</string>
+    <string name="messages_drafts">草稿箱</string>
+    <string name="message_published_content">已发布内容测试内容无任何意义已发布内容测试内容无任何意义已发布内容测试内容无任何意义已发布内容测试内容无任何意义</string>
+    <string name="message_drafts_content">草稿箱内容测试内容无任何意义草稿箱内容测试内容无任何意义草稿箱内容测试内容无任何意义草稿箱内容测试内容无任何意义</string>
+    <string name="dialog_show_selected_amount">已选 %d 人</string>
+    <string name="dialog_all_staff">全部成员</string>
+
+    <!-- manage dialog button text -->
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_finish">Finish</string>
+    <string name="dialog_add_department">新增部门</string>
+    <string name="dialog_edit_department">编辑部门</string>
+    <string name="dialog_warning">Warning</string>
+    <string name="dialog_add_department_text">请输入部门名称</string>
+    <string name="dialog_delete_department">确定删除此部门？ </string>
+    <string name="dialog_ok_button">OK</string>
+    <string name="dialog_content_delete_activity">确定删除此活动？</string>
+    <string name="dialog_message_space">Email is required.</string>
+    <string name="dialog_message_format_error">Invaid email.</string>
+    <string name="dialog_message_not_found_email_app">No email client is detected.</string>
+
+    <!-- Toast -->
+    <string name="toast_delete">Delete</string>
+    <string name="toast_send">Send</string>
+    <string name="toast_save">Save</string>
+    <string name="toast_time_is_null">Time cannot be empty.</string>
+    <string name="toast_end_time_early_than_start_time">End time cannot be earlier than start time.</string>
+    <string name="toast_empty_value">Cannot be blank.</string>
+    <string name="toast_no_permission">We need permission to change image.</string>
+
+    <!-- Integral -->
+    <string name="describe_mug">没错，就是马克杯！舍弃诸多细节的讲究，只留下方便好用的“马克杯，回归最单纯、最简单的饮用之道，让人轻轻松松，享受一杯佳饮。\n简约的杯身配上最简洁的 XO Group 集团标志，一如简单而不失设计感。我们的马克杯是你办公室工作的好伴侣。</string>
+    <string name="validity">Effective Days</string>
+    <string name="remaining">Remaining</string>
+    <string name="exchanged">Exchanged</string>
+    <string name="exchange">Exchange</string>
+    <string name="describe_goods_details">Description</string>
+    <string name="integral">Points</string>
+
+    <!-- Activity Manage-->
+    <string name="edit_activity_type">编辑活动类型</string>
+    <string name="add_activity_type">新增活动类型</string>
+    <string name="delete_activity_type">删除活动类型</string>
+    <string name="determine_delete_activity_type">确定删除活动类型：</string>
+    <string name="dialog_add_activity_type">请输入类型名称</string>
+    <string name="sign_in">Sign In</string>
+    <string name="activity_title">Title</string>
+
+    <!--Create activity-->
+    <string name="actionbar_title_create_activity">创建活动 I</string>
+    <string name="activity_title_hint">输入活动标题</string>
+    <string name="activity_type">活动类型</string>
+    <string name="choose_activity_type">选择活动类型</string>
+    <string name="choose_start_time_hint">选择开始时间</string>
+    <string name="choose_end_time_hint">选择结束时间</string>
+    <string name="nextstep_button_text">下一步</string>
+    <string name="googlemap_address_hint">输入谷歌地图</string>
+    <string name="choose_frequent_address_hint">常用地址</string>
+    <string name="please_choose">请选择</string>
+    <string name="enroll_time">Time of Sign Up</string>
+    <string name="txt_sign_integral">签到积分</string>
+    <string name="txt_test_integral">评测积分</string>
+    <string name="txt_max_count">最多参加人数</string>
+    <string name="txt_to">%1$s To %2$s</string>
+    <string name="event_time">Event Time</string>
+    <string name="txt_zero">0</string>
+    <string name="activity_content">活动内容</string>
+    <string name="activity_publish">发布</string>
+    <string name="activity_save">保存</string>
+    <string name="hint_activity_content">在这儿写下您要举行的活动的详细内容......</string>
+    <string name="demo_txt_basketball_game">2014篮球比赛小组赛第一场</string>
+    <string name="add_new_activity">新增活动</string>
+    <string name="activity_type_train">培训</string>
+    <string name="activity_type_active">活动</string>
+    <string name="activity_type_idea">创意</string>
+    <string name="activity_type_other">其他</string>
+    <string name="ensure">OK</string>
+    <string name="warning_about_time_1">报名结束时间不能早于报名开始时间</string>
+    <string name="warning_about_time_2">活动开始时间不能早于报名结束时间</string>
+    <string name="warning_about_time_3">活动结束时间不能早于活动开始时间</string>
+    <string name="toast_success">创建活动成功</string>
+    <string name="demo_txt_activity_type_training">培训</string>
+    <string name="demo_txt_activity_type_activity">活动</string>
+    <string name="demo_txt_activity_type_originality">创意</string>
+    <string name="demo_txt_activity_type_other">其他</string>
+    <string name="txt_btn_delete">删除</string>
+    <string name="txt_tv_send_to">发至</string>
+    <string name="demo_txt_tv_all">全部成员、全部成员、全部成员、全部成员、全部成员、全部成员、全部成员、全部成员、全部成员</string>
+    <string name="txt_tv_title">标题</string>
+    <string name="txt_btn_edit">编辑</string>
+    <string name="hint_txt_1">在这写下您要发布的公告，消息正文内容......</string>
+    <string name="txt_btn_send">发送</string>
+    <string name="txt_btn_save">保存</string>
+    <string name="tv_no_event_tip">暂时没有任何活动哦, 看看其它日期吧!</string>
+    <string name="text_registration_success">Congrats! Signed up successfully.</string>
+    <string name="text_check_in_success">Congrats! Signed in successfully.</string>
+
+    <!-- Chinese in java files -->
+    <string name="txt_tool_name_1">延时工具</string>
+    <string name="txt_tool_name_2">防御工具</string>
+    <string name="txt_good_name_1">xo group马克杯一只</string>
+    <string name="txt_good_name_2">Theknot T恤一件</string>
+    <string name="txt_good_name_3">Theknot 帆布袋一个</string>
+    <string name="actual_product">Gifts</string>
+    <string name="virtual_product">Virtual Gifts</string>
+    <string name="txt_choose_head_image">选择头像</string>
+    <string name="txt_album">相册</string>
+    <string name="txt_take_photo">拍照</string>
+    <string name="txt_object_name">Object Name</string>
+    <string name="txt_personnel_dept">人事部</string>
+    <string name="txt_finance_dept">财务部</string>
+    <string name="txt_marketing_dept">市场部</string>
+    <string name="txt_sales_dept">销售部</string>
+    <string name="txt_research_and_development_center">研发中心</string>
+    <string name="txt_basketball_game">2014 篮球赛</string>
+    <string name="txt_people"></string>
+    <string name="txt_search_employee">查找员工</string>
+    <string name="hint_search_employee">输入姓名或者工号查找</string>
+
+    <string name="txt_amount">10/30</string>
+    <string name="txt_team">Team</string>
+    <string name="txt_member">个人</string>
+    <string name="txt_team_name">团队名称</string>
+    <string name="txt_member_name">成员名称</string>
+
+    <string name="txt_email">\@xogrp.com</string>
+
+    <string name="ranking_title_1">monthRankForMember</string>
+    <string name="ranking_title_2">yearRankForMember</string>
+    <string name="ranking_title_3">quarterRankForTeam</string>
+    <string name="ranking_title_4">yearRankForTeam</string>
+
+    <string name="txt_member_count">%s</string>
+
+    <string name="product_use">Use</string>
+    <string name="product_used">Used</string>
+    <string name="product_unclaimed">Receive</string>
+    <string name="product_claimed">Received</string>
+    <string name="txt_progress">Upgrade Progress</string>
+    <string name="txt_expiry_date">Effective days: %s</string>
+    <!--progressbar-->
+    <string name="loading">Loading&#8230;</string>
+    <!-- photo wall -->
+    <string name="text_grade">Privilege:&#160;</string>
+    <string name="text_year_integral">Annual Points:&#160;</string>
+    <string name="text_month_integral">Monthly Points:&#160;</string>
+    <string name="get_photowall_data_faild">Please try again.</string>
+
+    <!-- employee information -->
+    <string name="upgrade_progress_text">Upgrade Progress</string>
+    <string name="employee_message_section">Department</string>
+    <string name="employee_message_position">Job Title</string>
+    <string name="employee_message_superior">Supervisor</string>
+    <string name="employee_message_email">Email</string>
+    <string name="employee_message_birthday">Birthday</string>
+    <string name="employee_message_phone_number">Phone Number</string>
+    <string name="employee_message_self_introduction">Self-Introduction</string>
+    <string name="employee_message_button_text">SAVE</string>
+    <string name="save_success_text">Saved successfully.</string>
+    <string name="save_failed_text">Failed to save. Please try again later.</string>
+    <string name="save_no_update">Data is already up to date</string>
+    <string name="choose_photo_dialog_title">Edit</string>
+    <string name="choose_photo_dialog_text">Choose Photo</string>
+    <string name="self_introduction_too_long_tip">Self-Introduction should be within 200 characters!</string>
+    <string name="self_introduction_phone_num_too_long_tip">Use 11 digits for Phone #.</string>
+    <string name="employee_message_phone_num_null">Phone #</string>
+    <string name="employee_message_introduction_null">Introduction</string>
+
+    <!-- Calendar View-->
+    <string name="SUN">S</string>
+    <string name="MON">M</string>
+    <string name="TUE">T</string>
+    <string name="WED">W</string>
+    <string name="THU">T</string>
+    <string name="FRI">F</string>
+    <string name="SAT">S</string>
+    <string name="calendar_tag">is able click</string>
+    <string name="calendar_date_format">MMM yyyy</string>
+    <string name="calendar_date_format_one_day">yyyyMMdd</string>
+    <string name="calendar_transition">enableTransitionType</string>
+    <string name="calendar_transition_type">CHANGING</string>
+
+    <!-- Month stars -->
+    <string name="get_month_data_faild">Please try again.</string>
+    <string name="staff_of_the_month_in">Staff of the Month in </string>
+    <string name="comes_from"> comes from</string>
+    <string name="corporate_system_team"> team!</string>
+    <string name="gets_highest_score_by_the_team_voting"> gets highest score by the team voting, so Staff of the Month in </string>
+    <string name="goes_to"> goes to</string>
+    <string name="congratulations_to">Congratulations to </string>
+    <string name="and_thanks_for_all_hard_working"> and thanks for all hard working!</string>
+    <string name="month_star_january">January</string>
+    <string name="month_star_february">February</string>
+    <string name="month_star_march">March</string>
+    <string name="month_star_april">April</string>
+    <string name="month_star_may">May</string>
+    <string name="month_star_june">June</string>
+    <string name="month_star_july">July</string>
+    <string name="month_star_august">August</string>
+    <string name="month_star_september">September</string>
+    <string name="month_star_october">October</string>
+    <string name="month_star_november">November</string>
+    <string name="month_star_december">December</string>
+    <string name="month_star_pager_title_month_one">Jan</string>
+    <string name="month_star_pager_title_month_two">Feb</string>
+    <string name="month_star_pager_title_month_three">Mar</string>
+    <string name="month_star_pager_title_month_four">Apr</string>
+    <string name="month_star_pager_title_month_five">May</string>
+    <string name="month_star_pager_title_month_six">June</string>
+    <string name="month_star_pager_title_month_seven">July</string>
+    <string name="month_star_pager_title_month_eight">Aug</string>
+    <string name="month_star_pager_title_month_nine">Sept</string>
+    <string name="month_star_pager_title_month_ten">Oct</string>
+    <string name="month_star_pager_title_month_eleven">Nov</string>
+    <string name="month_star_pager_title_month_twelve">Dec</string>
+
+    <!-- New Commer -->
+    <string name="new_comer_welcome">WELCOME ON BOARD</string>
+    <string name="new_comer_entry_time_text">OnBoard:&#160;</string>
+    <string name="new_comer_faild">Please try again.</string>
+
+    <!-- Splash Page -->
+    <string name="splash_page_tip">Network issue. Please re-log in.</string>
+
+    <string name="dialog_message_result_is_empty">No results found.</string>
+
+    <!-- ListView set Empty View-->
+    <string name="list_empty_message">Oops! No available data.</string>
+
+    <!-- Menu -->
+    <string name="menu_item_language_title">中 文</string>
+    <string name="menu_item_password_title">Change password</string>
+    <string name="menu_item_about_tk_title">About TK</string>
+    <string name="menu_item_logout_title">Log Out</string>
+    <!--add activity-->
+    <string name="activity_input_name">请输入活动名称</string>
+    <string name="activity_input_type">请输入活动类型</string>
+    <string name="activity_initiator">发起者</string>
+    <string name="activity_begin_time">活动开始时间</string>
+    <string name="activity_end_time">活动结束时间</string>
+    <string name="activity_capacity">名额上限</string>
+    <string name="activity_integral_types">积分类型</string>
+   <string name="activity_address">活动地点</string>
+    <string name="activity_about__content">活动描述</string>
+    <string name="activity_sigin_begin_time">报名开始时间</string>
+    <string name="activity_sigin_end_time">报名结束时间</string>
+    <string name="activity_submit">提交</string>
+
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <!--add activity-->
+    <string name="admin_entry">管理员</string>
+    <string name="system_manage_activity">系统管理</string>
+    <string name="job_title_activity">职位：</string>
+    <string name="employees_manage">员工管理</string>
+    <string name="messages_manage">消息管理</string>
+    <string name="Integral_manage">积分管理</string>
+    <string name="activities_manage">活动管理</string>
+    <string name="create_activity">创建活动</string>
+    <string name="constant_address">常用地址</string>
+    <string name="activity_list">活动列表</string>
+
+    <string name="create_activity_title">标题</string>
+    <string name="create_activity_input_title">请输入活动标题</string>
+    <string name="create_activity_choose_activity_tpye">选择活动类型</string>
+    <string name="activity_time">活动时间</string>
+    <string name="input_activity_start_time">选择开始时间</string>
+    <string name="input_activity_input_end_time">选择结束时间</string>
+    <string name="choose_the_address">选择常用地址</string>
+    <string name="input_the_baidu_address">百度地址</string>
+    <string name="the_activity_content">活动内容</string>
+    <string name="input_activity_detail">在这儿写下您要举办的活动的详细内容...</string>
+    <string name="next_step">下一步</string>
+    <string name="the_activity_initiator">发起者</string>
+    <string name="choose_one_initiator">选择发起者</string>
+    <string name="integral_type">积分类型</string>
+    <string name="the_activity_capacity">名额上限</string>
+    <string name="choose_the_number">输入人数</string>
+    <string name="choose_the_integral_type">选择积分类型</string>
+    <string name="activity_invitees">受邀者</string>
+    <string name="staff">工作人员</string>
+    <string name="activity_tag">活动标签</string>
+    <string name="activity_inter">内</string>
+    <string name="activity_outer">外</string>
+    <string name="activity_need_sign">需要报名</string>
+    <string name="activity_need_sign_yes">是</string>
+    <string name="activity_need_sign_no">否</string>
+    <string name="activity_sign_date">报名时间</string>
+    <string name="activity_begin_sign_date">选择开始时间</string>
+    <string name="activity_end_sign_date">选择结束时间</string>
+    <string name="activity_release">发布</string>
+    <string name="input_activity_type">请输入活动类型</string>
+    <string name="activity_max_number">(MAX 1,000)</string>
+    <string name="max_activity_number">1000</string>
+    <string name="activity_default_min_number">1</string>
+    <string name="input_commontly_address">请输入常用地址</string>
+    <string name="btn_edit">编辑</string>
+    <string name="btn_delete">删除</string>
+    <string name="administratorfragment">administrator_fragment</string>
+    <string name="choose_the_initiator">选择发起人</string>
+
+    <!--add types-->
+    <string name="please">请输入活动类型</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+
+    <string name="addType">编辑活动类型</string>
+    <string name="actType">活动类型</string>
+
+
+    <string name="manage_staff">员工管理</string>
+    <string name="manage_message">消息管理</string>
+    <string name="manage_integral">积分管理</string>
+    <string name="manage_activity">活动管理</string>
+
+  <string name="createActivity">创建活动</string>
+    <string name="activityType">活动类型</string>
+    <string name="usedAddress">常用地址</string>
+    <string name="activityList">活动列表</string>
+
+    <string name="manageAct">活动管理</string>
+
+    <string name="input_address">请输入常用地址</string>
+    <string name="add_used_address">添加常用地址</string>
+    <string name="address_actionbar_title">常用地址</string>
+    <string name="add_address_tip">目前还没有创建任何常用地址。\n马上点击右上角的+开始创建吧！</string>
+
+    <!--add frequent addresss-->
+    <string name="keep">保存</string>
+    <string name="have_not_add_address">目前还没有创建任何常用地址。\n马上点击右上角的+开始创建吧！</string>
+
+    <string name="create_activity_second">创建活动II</string>
+    <string name="tv_data">日期</string>
+    <string name="tv_time">时间</string>
+    <string name="no_create_activity_type">目前还没有创建任何常用地址。\n马上点击右上角的+开始创建吧！</string>
+
+    <string name="really_to_delete">确认删除？</string>
+    <string name="sure_to_delete">确认删除</string>
+    <string name="is_sure_to_delete">确认删除？</string>
+
+
+    <string name="address_wordsum">/150</string>
+    <string name="address_wordcount">150</string>
+
+    <string name="add">添加</string>
+    <string name="hour_one">01</string>
+    <string name="hour_two">02</string>
+    <string name="hour_three">03</string>
+    <string name="hour_four">04</string>
+    <string name="hour_five">05</string>
+    <string name="hour_six">06</string>
+    <string name="hour_seven">07</string>
+    <string name="hour_eight">08</string>
+    <string name="hour_nine">09</string>
+    <string name="hour_ten">10</string>
+    <string name="hour_eleven">11</string>
+    <string name="hour_twelve">12</string>
+    <string name="hour_am">AM</string>
+    <string name="hour_pm">PM</string>
+
+    <!--create activity one page-->
+    <string name="dtdialog_comfirm">确认</string>
+    <string name="dtdialog_cancel">取消</string>
+    <string name="not_complete_the_activity_info">活动信息不完善，请填写完整！</string>
+    <string name="please_input_search_content">请输入搜索内容</string>
+    <string name="clean_history_record">清空历史记录</string>
+    <string name="not_history_record">没有历史记录！</string>
+    <string name="history_record">历史记录</string>
+    <string name="gz">广州</string>
+    <string name="date_time_dialogtitle_start">设置开始时间</string>
+    <string name="date_time_dialogtitle_end">设置结束时间</string>
+    <string name="tab_datepicker">日期</string>
+    <string name="tab_timepicker">时间</string>
+    <string name="title_max_word">最多100字</string>
+    <string name="content_max_word">最多1000字</string>
+
+</resources>

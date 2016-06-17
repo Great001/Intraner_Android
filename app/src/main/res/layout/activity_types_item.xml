@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/img_common_address_30"
+        android:layout_height="match_parent"
+        android:background="@drawable/create_activity_tick"
+        android:visibility="invisible"
+        android:id="@+id/img_activity_type"/>
+
+<TextView
+    android:id="@+id/tv_activity_type_item"
+    android:layout_width="@dimen/tv_common_address_200"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="25dp"
+    android:textSize="@dimen/tv_create_activity_text_size"
+    />
+</RelativeLayout>

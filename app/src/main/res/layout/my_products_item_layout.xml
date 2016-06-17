@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dip">
+
+    <com.xogrp.tkgz.View.CircleImageView
+        android:id="@+id/civ_product_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/civ_product_avatar"
+        android:layout_toRightOf="@+id/civ_product_avatar"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_expiry_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_product_name"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@+id/civ_product_avatar"
+        android:textColor="@color/et_username_color" />
+
+    <Button
+        android:id="@+id/btn_goods_use"
+        android:layout_width="60dip"
+        android:layout_height="24dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:background="@drawable/my_goods_shape"
+        android:gravity="center"
+        android:textSize="@dimen/btn_gift_details_text_size"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

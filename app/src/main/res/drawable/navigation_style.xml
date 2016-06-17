@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:color="@color/navigation_txt_focus">
+        <layer-list >
+            <item >
+                <shape android:shape="rectangle">
+                    <stroke android:width="3dp"  android:color="@color/navigation_focus_line"/>
+                </shape>
+            </item>
+            <item  android:bottom="3dp" >
+                <shape android:shape="rectangle" >
+                    <solid android:color="@color/black"/>
+                </shape>
+            </item>
+        </layer-list>
+        <!-- not selected -->
+    </item>
+
+    <item >
+        <shape >
+            <solid  android:color="@color/black"/>
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <com.xogrp.tkgz.View.CalendarView
+        android:id="@+id/v_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_selected"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center|left"
+        android:paddingLeft="16dp"
+        android:textColor="@color/c_line_color"
+        android:textSize="@dimen/font_size_18" />
+
+    <ListView
+        android:id="@+id/lv_event"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/c_line_color"
+        android:dividerHeight="0.3dp"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/tv_no_event_tip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/tv_no_event_tip"
+        android:textColor="@color/c_line_color"
+        android:textSize="@dimen/font_size_18"
+        android:visibility="gone" />
+</LinearLayout>
